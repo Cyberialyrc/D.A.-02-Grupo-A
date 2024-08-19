@@ -1,0 +1,22 @@
+header {
+    background-color: lightyellow;
+    padding: 60px;
+  }
+  
+  h1 {
+    color: yellowgreen;
+  }
+  
+  article {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    color: yellowgreen;
+  }
+  
+  footer {
+    background-color: lightyellow;
+    padding: 30px;
+  }
+  
