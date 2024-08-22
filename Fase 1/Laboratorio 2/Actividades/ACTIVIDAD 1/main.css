@@ -1,22 +1,26 @@
+/* Estilos para el encabezado */
 header {
-    background-color: lightyellow;
-    padding: 60px;
-  }
-  
-  h1 {
-    color: yellowgreen;
-  }
-  
-  article {
-    margin-bottom: 40px;
-  }
-  
-  h2 {
-    color: yellowgreen;
-  }
-  
-  footer {
-    background-color: lightyellow;
-    padding: 30px;
-  }
-  
+  background-color: lightyellow; /* Color de fondo para el encabezado */
+  padding: 60px; /* Relleno interno del encabezado */
+}
+
+/* Estilos para el título principal */
+h1 {
+  color: yellowgreen; /* Color del texto del título principal */
+}
+
+/* Estilos para los artículos */
+article {
+  margin-bottom: 40px; /* Margen inferior para los artículos */
+}
+
+/* Estilos para los subtítulos de los artículos */
+h2 {
+  color: yellowgreen; /* Color del texto de los subtítulos de los artículos */
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: lightyellow; /* Color de fondo para el pie de página */
+  padding: 30px; /* Relleno interno del pie de página */
+}
