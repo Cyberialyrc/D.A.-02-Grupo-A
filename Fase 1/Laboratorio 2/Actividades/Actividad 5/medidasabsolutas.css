@@ -1,0 +1,119 @@
+/* Utilización de centímetros (cm) */
+.caja-cm-1 {
+    width: 5cm;
+    height: 2.5cm;
+    background-color: lightsalmon;
+}
+.caja-cm-2 {
+    width: 4cm;
+    height: 2cm;
+    background-color: lightseagreen;
+}
+.caja-cm-3 {
+    width: 7cm;
+    height: 3.5cm;
+    background-color: lightsteelblue;
+}
+/* Utilización de milimetros (mm) */
+.caja-mm-1 {
+    width: 5mm;
+    height: 2.5mm;
+    background-color: lightsalmon;
+}
+.caja-mm-2 {
+    width: 4mm;
+    height: 2mm;
+    background-color: lightseagreen;
+}
+.caja-mm-3 {
+    width: 7mm;
+    height: 3.5mm;
+    background-color: lightsteelblue;
+}
+/* Utilización de cuartos de milimetros (Q) */
+.caja-q-1 {
+    width: 5q;
+    height: 2.5q;
+    background-color: lightsalmon;
+}
+.caja-q-2 {
+    width: 4q;
+    height: 2q;
+    background-color: lightseagreen;
+}
+.caja-q-3 {
+    width: 7q;
+    height: 3.5q;
+    background-color: lightsteelblue;
+}
+
+/* Utilización de pulgadas (in) */
+.caja-in-1 {
+    width: 2in;
+    height: 1in;
+    background-color: lightgoldenrodyellow;
+}
+
+.caja-in-2 {
+    width: 1.5in;
+    height: 0.75in;
+    background-color: lightpink;
+}
+.caja-in-3 {
+    width: 3in;
+    height: 1.5in;
+    background-color: lightgray;
+}
+
+/* Utilización de cuartos de picas (pc) */
+.caja-pc-1 {
+    width: 2pc;
+    height: 1pc;
+    background-color: lightgoldenrodyellow;
+}
+
+.caja-pc-2 {
+    width: 1.5pc;
+    height: 0.75pc;
+    background-color: lightpink;
+}
+.caja-pc-3 {
+    width: 3pc;
+    height: 1.5pc;
+    background-color: lightgray;
+}
+/* Utilización de cuartos de puntos (pt) */
+.caja-pt-1 {
+    width: 2pt;
+    height: 1pt;
+    background-color: lightgoldenrodyellow;
+}
+
+.caja-pt-2 {
+    width: 1.5pt;
+    height: 0.75pt;
+    background-color: lightpink;
+}
+.caja-pt-3 {
+    width: 3pt;
+    height: 1.5pt;
+    background-color: lightgray;
+}
+/* Unidad de medida píxeles (px) */
+.caja-px-1 {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+.caja-px-2 {
+    width: 150px;
+    height: 75px;
+    background-color: lightgreen;
+}
+
+.caja-px-3 {
+    width: 300px;
+    height: 150px;
+    background-color: lightcoral;
+}
