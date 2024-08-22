@@ -1,119 +1,115 @@
 /* Utilización de centímetros (cm) */
-.caja-cm-1 {
-    width: 5cm;
-    height: 2.5cm;
+.caja-cm {
+    width: 1.5cm;
+    height: 1.5cm;
     background-color: lightsalmon;
 }
-.caja-cm-2 {
-    width: 4cm;
-    height: 2cm;
-    background-color: lightseagreen;
+.text-cm {
+    font-size: 0.7cm; 
+    line-height: 0.5cm; /* Altura de línea en centímetros */
+    text-indent: 0.5cm; 
 }
-.caja-cm-3 {
-    width: 7cm;
-    height: 3.5cm;
+.boton-cm {
     background-color: lightsteelblue;
 }
-/* Utilización de milimetros (mm) */
-.caja-mm-1 {
-    width: 5mm;
-    height: 2.5mm;
-    background-color: lightsalmon;
-}
-.caja-mm-2 {
-    width: 4mm;
-    height: 2mm;
+/* Utilización de milímetros (mm) */
+.caja-mm {
+    width: 15mm;
+    height: 15mm;
     background-color: lightseagreen;
 }
-.caja-mm-3 {
-    width: 7mm;
-    height: 3.5mm;
-    background-color: lightsteelblue;
+.text-mm {
+    font-size: 7mm;
+    line-height: 5mm;
+    text-indent: 5mm;
 }
-/* Utilización de cuartos de milimetros (Q) */
-.caja-q-1 {
-    width: 5q;
-    height: 2.5q;
-    background-color: lightsalmon;
+.boton-mm {
+    width: 30mm;
+    height: 10mm;
+    background-color: lightcoral;
 }
-.caja-q-2 {
-    width: 4q;
-    height: 2q;
-    background-color: lightseagreen;
+
+/* Utilización de cuartos de milímetros (Q) */
+.caja-q {
+    width: 60Q; /* 15mm */
+    height: 60Q;
+    background-color: lightblue;
 }
-.caja-q-3 {
-    width: 7q;
-    height: 3.5q;
-    background-color: lightsteelblue;
+.text-q {
+    font-size: 28Q; /* 7mm */
+    line-height: 20Q; /* 5mm */
+    text-indent: 20Q;
+}
+.boton-q {
+    width: 120Q; /* 30mm */
+    height: 40Q; /* 10mm */
+    background-color: lightpink;
 }
 
 /* Utilización de pulgadas (in) */
-.caja-in-1 {
-    width: 2in;
-    height: 1in;
+.caja-in {
+    width: 0.6in;
+    height: 0.6in;
     background-color: lightgoldenrodyellow;
 }
-
-.caja-in-2 {
-    width: 1.5in;
-    height: 0.75in;
-    background-color: lightpink;
+.text-in {
+    font-size: 0.28in;
+    line-height: 0.2in;
+    text-indent: 0.2in;
 }
-.caja-in-3 {
-    width: 3in;
-    height: 1.5in;
+.boton-in {
+    width: 1.2in;
+    height: 0.4in;
     background-color: lightgray;
 }
 
-/* Utilización de cuartos de picas (pc) */
-.caja-pc-1 {
-    width: 2pc;
-    height: 1pc;
-    background-color: lightgoldenrodyellow;
+/* Utilización de picas (pc) */
+.caja-pc {
+    width: 3pc; /* 36pt */
+    height: 3pc;
+    background-color: lightskyblue;
 }
-
-.caja-pc-2 {
-    width: 1.5pc;
-    height: 0.75pc;
-    background-color: lightpink;
+.text-pc {
+    font-size: 1.4pc; /* 16.8pt */
+    line-height: 1pc; /* 12pt */
+    text-indent: 1pc;
 }
-.caja-pc-3 {
-    width: 3pc;
-    height: 1.5pc;
-    background-color: lightgray;
-}
-/* Utilización de cuartos de puntos (pt) */
-.caja-pt-1 {
-    width: 2pt;
-    height: 1pt;
-    background-color: lightgoldenrodyellow;
-}
-
-.caja-pt-2 {
-    width: 1.5pt;
-    height: 0.75pt;
-    background-color: lightpink;
-}
-.caja-pt-3 {
-    width: 3pt;
-    height: 1.5pt;
-    background-color: lightgray;
-}
-/* Unidad de medida píxeles (px) */
-.caja-px-1 {
-    width: 200px;
-    height: 100px;
-    background-color: lightblue;
-}
-
-.caja-px-2 {
-    width: 150px;
-    height: 75px;
+.boton-pc {
+    width: 6pc; /* 72pt */
+    height: 2pc;
     background-color: lightgreen;
 }
 
-.caja-px-3 {
-    width: 300px;
-    height: 150px;
+/* Utilización de puntos (pt) */
+.caja-pt {
+    width: 36pt;
+    height: 36pt;
+    background-color: lightgoldenrodyellow;
+}
+.text-pt {
+    font-size: 16pt;
+    line-height: 12pt;
+    text-indent: 12pt;
+}
+.boton-pt {
+    width: 72pt;
+    height: 24pt;
+    background-color: lightpink;
+}
+
+/* Unidad de medida píxeles (px) */
+.caja-px {
+    width: 60px;
+    height: 60px;
     background-color: lightcoral;
+}
+.text-px {
+    font-size: 28px;
+    line-height: 20px;
+    text-indent: 20px;
+}
+.boton-px {
+    width: 120px;
+    height: 40px;
+    background-color: lightblue;
 }
