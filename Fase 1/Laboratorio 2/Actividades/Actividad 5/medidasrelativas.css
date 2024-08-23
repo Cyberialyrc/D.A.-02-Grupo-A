@@ -1,0 +1,152 @@
+/* Utilización de em */
+.caja-em {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: lightsalmon;
+}
+.text-em {
+    font-size: 0.7em; 
+    line-height: 0.5em; 
+    text-indent: 0.5em; 
+}
+.boton-em {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    background-color: lightsteelblue;
+}
+
+/* Utilización de ex */
+.caja-ex {
+    width: 30ex;
+    height: 15ex;
+    background-color: lightcoral;
+}
+.text-ex {
+    font-size: 0.7ex; 
+    line-height: 0.5ex; 
+    text-indent: 0.5ex; 
+}
+.boton-ex {
+    font-size: 1ex;
+    padding: 0.5ex 1ex;
+    background-color: lightgreen;
+}
+
+/* Utilización de ch */
+.caja-ch {
+    width: 15ch;
+    height: 8ch;
+    background-color: lightblue;
+}
+.text-ch {
+    font-size: 0.7ch; 
+    line-height: 0.5ch; 
+    text-indent: 0.5ch; 
+}
+.boton-ch {
+    font-size: 1ch;
+    padding: 0.5ch 1ch;
+    background-color: lightpink;
+}
+
+/* Utilización de rem */
+.caja-rem {
+    width: 3rem;
+    height: 3rem;
+    background-color: lightyellow;
+}
+.text-rem {
+    font-size: 0.7rem; 
+    line-height: 0.5rem; 
+    text-indent: 0.5rem; 
+}
+.boton-rem {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: lightgray;
+}
+
+/* Utilización de lh */
+.caja-lh {
+    width: 2lh;
+    height: 2lh;
+    background-color: lightsteelblue;
+}
+.text-lh {
+    font-size: 0.7lh; 
+    line-height: 0.5lh; 
+    text-indent: 0.5lh; 
+}
+.boton-lh {
+    font-size: 1lh;
+    padding: 0.5lh 1lh;
+    background-color: lightcoral;
+}
+
+/* Utilización de vw */
+.caja-vw {
+    width: 10vw;
+    height: 5vw;
+    background-color: lightcyan;
+}
+.text-vw {
+    font-size: 2vw; 
+    line-height: 1.5vw; 
+    text-indent: 1vw; 
+}
+.boton-vw {
+    font-size: 2vw;
+    padding: 1vw 2vw;
+    background-color: lightgoldenrodyellow;
+}
+
+/* Utilización de vh */
+.caja-vh {
+    width: 10vh;
+    height: 5vh;
+    background-color: lightgray;
+}
+.text-vh {
+    font-size: 2vh; 
+    line-height: 1.5vh; 
+    text-indent: 1vh; 
+}
+.boton-vh {
+    font-size: 2vh;
+    padding: 1vh 2vh;
+    background-color: lightseagreen;
+}
+
+/* Utilización de vmin */
+.caja-vmin {
+    width: 10vmin;
+    height: 5vmin;
+    background-color: lightblue;
+}
+.text-vmin {
+    font-size: 2vmin; 
+    line-height: 1.5vmin; 
+    text-indent: 1vmin; 
+}
+.boton-vmin {
+    font-size: 2vmin;
+    padding: 1vmin 2vmin;
+    background-color: lightcoral;
+}
+
+/* Utilización de vmax */
+.caja-vmax {
+    width: 10vmax;
+    height: 5vmax;
+    background-color: lightyellow;
+}
+.text-vmax {
+    font-size: 2vmax; 
+    line-height: 1.5vmax; 
+    text-indent: 1vmax; 
+}
+.boton-vmax {
+    font-size: 2vmax;
+    padding: 1vmax 2vmax;
+    background-color: lightpink;
+}
