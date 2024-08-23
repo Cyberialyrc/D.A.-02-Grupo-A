@@ -1,0 +1,26 @@
+/* Establece la fuente predeterminada para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Aplica color con valores HLS al título h1 */
+h1 {
+    color: hsl(30, 100%, 50%); /* Naranja (Hue: 30 grados, Saturación: 100%, Luminosidad: 50%) */
+}
+
+/* Establece el color de texto y fondo para los párrafos usando valores HLS */
+p {
+    color: hsl(120, 60%, 40%); /* Verde (Hue: 120 grados, Saturación: 60%, Luminosidad: 40%) */
+    background-color: hsl(60, 80%, 90%); /* Amarillo claro (Hue: 60 grados, Saturación: 80%, Luminosidad: 90%) */
+    padding: 10px; /* Añade espacio interno alrededor del texto */
+    border: 1px solid hsl(30, 70%, 30%); /* Borde marrón oscuro (Hue: 30 grados, Saturación: 70%, Luminosidad: 30%) */
+}
+
+/* Configura el color de fondo y texto para los divs usando valores HLS */
+div {
+    color: hsl(0, 0%, 100%); /* Blanco puro (Hue: 0 grados, Saturación: 0%, Luminosidad: 100%) */
+    background-color: hsl(210, 50%, 40%); /* Azul grisáceo (Hue: 210 grados, Saturación: 50%, Luminosidad: 40%) */
+    padding: 20px; /* Añade espacio interno alrededor del contenido */
+    margin-top: 10px; /* Añade un margen superior para separar el div del contenido anterior */
+    border-radius: 5px; /* Redondea las esquinas del borde */
+}

@@ -1,0 +1,26 @@
+/* Establece la fuente predeterminada para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Aplica color azul marino al título h1 */
+h1 {
+    color: navy; /* navy es un color nombrado que representa un tono oscuro de azul */
+}
+
+/* Establece el color de texto, fondo, relleno y borde para los párrafos */
+p {
+    color: darkgreen; /* darkgreen es un verde oscuro */
+    background-color: lightyellow; /* lightyellow es un amarillo claro */
+    padding: 10px; /* Añade espacio interno alrededor del texto */
+    border: 1px solid olive; /* olive es un tono verde olivo para el borde */
+}
+
+/* Configura el color de fondo, texto, relleno, margen y bordes redondeados para los divs */
+div {
+    color: white; /* Establece el color de texto en blanco */
+    background-color: teal; /* teal es un color azul verdoso oscuro */
+    padding: 20px; /* Añade espacio interno alrededor del contenido */
+    margin-top: 10px; /* Añade un margen superior para separar el div del contenido anterior */
+    border-radius: 5px; /* Redondea las esquinas del borde */
+}
