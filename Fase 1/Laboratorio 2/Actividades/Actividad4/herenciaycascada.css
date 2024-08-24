@@ -1,0 +1,78 @@
+/*************************************************************************************************
+ARCHIVO : herenciaycascada.css
+AUTOR : Ricardo Gabriel Manrique Silva
+FECHA : 24/08/2024
+DESCRIPCIÓN : Utilización de selectores por herencia y cascada - CSS
+*************************************************************************************************/
+/* Estilos basados en herencia */
+
+/* El color azul se hereda por los elementos hijos */
+.container {
+    color: blue; /* Texto en azul para todo lo que esté dentro del contenedor */
+}
+
+/* El tamaño de fuente se hereda por los elementos hijos */
+.container p {
+    font-size: 18px; /* Fuente de 18px para los párrafos */
+}
+
+/* Estilo para spans dentro de contenedores */
+.container span {
+    color: darkblue; /* Texto en azul oscuro para spans */
+}
+
+/* Estilo para elementos strong */
+.container strong {
+    font-weight: bold; /* Negrita para strong */
+}
+
+/* Estilo para elementos enfáticos */
+.container em {
+    font-style: italic; /* Texto en cursiva */
+    color: lightblue; /* Texto en azul claro */
+}
+
+/* Estilo para elementos de código */
+.container code {
+    font-family: monospace; /* Fuente monoespaciada */
+    color: navy; /* Texto en azul marino */
+}
+
+/* Los estilos de lista se heredan */
+.list-container ul {
+    color: green; /* Texto verde para la lista */
+    font-size: 16px; /* Fuente de 16px */
+}
+
+/* Estilos basados en cascada */
+
+/* Título general */
+h2 {
+    color: red; /* Color rojo para el título */
+}
+
+/* El estilo específico para el contenedor anula el estilo general */
+.list-container h2 {
+    color: purple; /* Anula el rojo con morado */
+}
+
+/* Título general de h3 */
+h3 {
+    color: brown; /* Color marrón para h3 */
+}
+
+/* El estilo específico para el contenedor anula el estilo general */
+.list-container h3 {
+    color: black; /* Anula el marrón con negro */
+}
+
+/* Párrafos generales */
+p {
+    color: gray; /* Color gris para párrafos */
+    margin-bottom: 10px; /* Margen inferior de 10px */
+}
+
+/* Párrafos específicos dentro de un contenedor */
+.list-container p {
+    color: black; /* Color negro anula el gris */
+}
