@@ -1,0 +1,39 @@
+/******************************************************
+ARCHIVO : atributos.css
+AUTOR : Ricardo Gabriel Manrique Silva
+FECHA : 24/08/2024
+DESCRIPCIÓN : Utilización de selectores de atributos - CSS
+*******************************************************/
+/* Selecciona todos los enlaces con el atributo href */
+/* Pone color morado y eliminado la decoración (Subrayado) en los tipo href */
+[href] {
+    color: rgb(188, 33, 235); /* Color morado */
+    text-decoration: none; /* Sin decoración */
+}
+
+/* Selecciona los enlaces cuyo href empieza con "https" */
+/* Cambia el color de los enlaces a verde */
+a[href^="https"] {
+    color: green; 
+}
+
+/* Selecciona los enlaces cuyo href termina en ".pdf" */
+/* Cambia el color a rojo y agrega negrita a los tipo .pdf */
+a[href$=".pdf"] {
+    color: red;
+    font-weight: bold;
+}
+
+/* Selecciona los inputs de tipo "text" */
+/* Agrega un borde azul y relleno alrededor de los tipo "text" */
+input[type="text"] {
+    border: 2px solid rgb(64, 52, 172); /* Borde azul */
+    padding: 5px; /* Relleno de 5 pixeles */
+}
+
+/* Selecciona los elementos con el atributo data-toggle igual a "dropdown" */
+/* Cambia el color de fondo y agrega relleno */
+[data-toggle="dropdown"] {
+    background-color: rgb(255, 136, 0); /* Fondo anaranjado */
+    padding: 10px; /* Relleno de 10 pixeles */
+}

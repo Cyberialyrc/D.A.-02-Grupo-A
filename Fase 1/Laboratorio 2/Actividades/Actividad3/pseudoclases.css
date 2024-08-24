@@ -1,0 +1,65 @@
+/*************************************************************************************************
+ARCHIVO : pseudoclases.css
+AUTOR : Ricardo Gabriel Manrique Silva
+FECHA : 24/08/2024
+DESCRIPCIÓN : Utilización de selectores de pseudoclases - CSS
+*************************************************************************************************/
+/* Cambia el color a anaranjado de los enlaces al pasar el mouse */
+a:hover {
+    color: orange;
+}
+
+/* Aplica estilo al primer hijo de la lista */
+/* :first-child selecciona el primer elemento hijo dentro de su contenedor padre */
+ul li:first-child {
+    font-weight: bold;
+}
+
+/* Aplica estilo al último hijo de la lista */
+/* :last-child selecciona el último elemento hijo dentro de su contenedor padre */
+ul li:last-child {
+    color: red; /* Color rojo para el último elemento de la lista */
+}
+
+/* Cambia el color de fondo de un campo de entrada cuando está enfocado */
+/* :focus se activa cuando el campo de entrada está activo */
+input:focus {
+    background-color: lightblue; /* Fondo azul claro cuando el campo está enfocado */
+}
+
+/* Aplica un estilo a un botón cuando está siendo presionado */
+/* :active se activa cuando el botón está siendo presionado */
+button:active {
+    background-color: darkblue; /* Fondo azul oscuro mientras se mantiene el clic */
+    color: white; /* Texto en blanco mientras se mantiene el clic */
+}
+
+/* Estilo a los enlaces visitados */
+/* :visited aplica estilos a los enlaces que ya han sido visitados */
+a:visited {
+    color: darkviolet; /* Cambia el color del enlace visitado a violeta oscuro */
+}
+
+/* Selecciona los elementos que son hijos directos de otro elemento */
+/* :first-of-type selecciona el primer elemento de su tipo dentro de su contenedor padre */
+div > p:first-of-type {
+    font-style: italic; /* Aplica estilo de cursiva al primer párrafo dentro del div */
+}
+
+/* Aplica estilo a los elementos deshabilitados */
+/* :disabled se aplica a los elementos que están deshabilitados */
+input:disabled {
+    background-color: lightgray; /* Cambia el fondo a gris claro para campos deshabilitados */
+}
+
+/* Selecciona elementos que están en estado habilitado */
+/* :enabled se aplica a los elementos que están habilitados */
+input:enabled {
+    border: 2px solid fuchsia; /* Aplica un borde fucsia a los campos habilitados */
+}
+
+/* Aplica estilo a los campos de formulario requeridos */
+/* :required se aplica a los campos que son obligatorios en un formulario */
+input:required {
+    border: 2px solid red; /* Aplica un borde rojo a los campos obligatorios */
+}
