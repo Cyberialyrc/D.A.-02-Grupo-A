@@ -1,0 +1,28 @@
+/* Estilo del botón */
+.boton {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+/* Estilo y animación para el elemento animado */
+.animado {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: mymove 5s infinite;/* Aplica la animación "mymove" que dura 5 segundos y se repite infinitamente */
+    cursor: pointer;
+}
+/* Definición de la animación */
+@keyframes mymove {
+    0% {left: 0px; top: 0px;} /* Inicio de la animación: posición en la esquina superior izquierda */
+    25% {left: 200px; top: 0px;}
+    50% {left: 200px; top: 200px;}
+    75% {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Animaciones y Transiciones</title>
+    <link rel="stylesheet" href="animaciones.css">
+</head>
+<body>
+    <!-- Botón que podría estar vinculado a futuras acciones -->
+    <button class="boton">Haz clic</button>
+    
+    <!-- Elemento div que se anima cuando es clicado -->
+    <div class="animado"></div>
+    
+    <!-- Mensaje que se muestra al detenerse la animación -->
+    <p id="mensaje" style="display: none;">El cuadrado se detuvo</p>
+
+    <script>
+        // Añadiendo un evento de clic al elemento con la clase "animado"
+        document.querySelector('.animado').addEventListener('click', function() {
+            // Detener la animación en curso
+            this.style.animationPlayState = 'paused';
+            
+            // Mostrar el mensaje de que la animación se ha detenido
+            document.getElementById('mensaje').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
