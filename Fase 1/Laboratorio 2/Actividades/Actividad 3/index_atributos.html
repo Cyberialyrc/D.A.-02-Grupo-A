@@ -1,0 +1,43 @@
+<!--ARCHIVO : index_atributos.html -->
+<!--AUTOR : Ricardo Gabriel Manrique Silva -->
+<!--FECHA : 24/08/2024 -->
+<!--DESCRIPCIÓN : Archivo html para llamar a atributos.css -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que se muestra en la pestaña -->
+    <title>Utilización de Selectores de Atributos</title>
+    <!-- Vinculación con "atributos.css" -->
+    <link rel="stylesheet" href="atributos.css">
+</head>
+<body>
+    <!-- Título de la página -->
+    <h1>Ejemplo de Selectores de Atributos</h1>
+
+    <!-- Tipos "href" -->
+    <a href="https://www.google.com">Google</a><br>
+    <a href="archivo.pdf">PDF</a><br>
+    <a href="asd.net">abc</a><br>
+
+    <!-- Título del formulario -->
+    <p>Formulario</p>
+    <!-- Formulario -->
+    <form>
+        <!-- Etiqueta y campo de entrada para "Nombre" -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        
+        <!-- Etiqueta y campo de entrada para "Apellido" -->
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+        
+        <!-- Submit (Botón de envío del formulario) -->
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Botón con atributo "Data-toggle" -->
+    <button data-toggle="dropdown">Botón con Dropdown</button>
+</body>
+</html>

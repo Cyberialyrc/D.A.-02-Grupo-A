@@ -1,0 +1,53 @@
+<!--ARCHIVO : index_combinadosymultiples.html -->
+<!--AUTOR : Ricardo Gabriel Manrique Silva -->
+<!--FECHA : 24/08/2024 -->
+<!--DESCRIPCIÓN : Archivo html para llamar a combinadosymultiples.css -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que se muestra en la pestaña -->
+    <title>Utilización de Selectores Combinados y Múltiples</title>
+    <!-- Vinculación con "combinadosymultiples.css" -->
+    <link rel="stylesheet" href="combinadosymultiples.css">
+</head>
+<body>
+    <!-- Título de la página -->
+    <h1>Ejemplos de Selectores Combinados y Múltiples</h1>
+
+    <!-- Combinación de selectores: Descendiente -->
+    <div class="container">
+        <p class="highlight">Este párrafo está dentro de un contenedor.</p> 
+        <strong>Este es un texto fuerte dentro de un contenedor destacado.</strong> 
+        <p>Este es otro párrafo.</p>
+    </div>
+
+    <!-- Combinación de selectores: Hijo directo -->
+    <ul class="menu">
+        <li>Elemento de menú 1</li>
+        <li>Elemento de menú 2</li>
+        <li>Elemento de menú 3</li>
+    </ul>
+
+    <!-- Selectores múltiples: Elementos con el mismo estilo -->
+    <div class="container">
+        <p class="highlight"><strong>Este es un texto fuerte dentro de un párrafo destacado en un contenedor.</strong></p> <!-- Este activa el segundo selector -->
+    </div>
+
+    <p class="highlight important">Párrafo destacado e importante.</p> <!-- Para activar .highlight, .important -->
+    <h2 class="highlight notice">Subtítulo destacado y de aviso.</h2> <!-- Para activar .highlight, .notice -->
+    <div class="highlight notice">Div destacado y de aviso.</div> <!-- Para activar .highlight, .notice -->
+
+    <!-- Selector combinado: Hermano adyacente -->
+    <h3>Título 1</h3>
+    <p>Párrafo después de Título 1.</p>
+    <h3>Título 2</h3>
+    <p>Párrafo después de Título 2.</p>
+
+    <!-- Selector combinado: Hermano general -->
+    <h4>Título 3</h4>
+    <p>Párrafo general después de Título 3.</p>
+    <p>Otro párrafo general después de Título 3.</p>
+</body>
+</html>
