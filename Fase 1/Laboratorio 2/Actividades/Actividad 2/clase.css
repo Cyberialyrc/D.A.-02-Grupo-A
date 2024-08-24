@@ -1,0 +1,10 @@
+/* Estilo para los elementos con la clase 'encabezado' */
+.encabezado {
+    color: purple;
+    font-size: 2em;/* Tamaño de fuente aumentado */
+}
+/* Estilo para los elementos con la clase 'texto' */
+.texto {
+    color: orange;
+    font-size: 1.2em;
+}
