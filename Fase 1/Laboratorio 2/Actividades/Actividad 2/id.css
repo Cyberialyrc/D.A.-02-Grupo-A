@@ -1,0 +1,18 @@
+/* Estilo para el elemento con el ID 'encabezado-principal' */
+#encabezado-principal {
+    color: red; 
+    font-size: 2em; /* Tamaño de fuente aumentado */
+}
+
+/* Estilo para el elemento con el ID 'parrafo-uno' */
+#parrafo-uno {
+    color: teal; 
+    font-size: 1.2em; /* Tamaño de fuente ligeramente aumentado */
+}
+
+/* Estilo para el elemento con el ID 'parrafo-dos' */
+#parrafo-dos {
+    color: navy;
+    font-size: 1.2em; /* Tamaño de fuente ligeramente aumentado */
+}
+

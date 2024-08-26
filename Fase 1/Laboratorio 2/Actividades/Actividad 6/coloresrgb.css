@@ -1,0 +1,26 @@
+/* Establece la fuente predeterminada para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Aplica color con valores RGB enteros al título h1 */
+h1 {
+    color: rgb(0, 0, 255); /* Azul puro (0 para rojo, 0 para verde, 255 para azul) */
+}
+
+/* Establece el color de texto y fondo para los párrafos usando valores RGB porcentuales */
+p {
+    color: rgb(50%, 0%, 50%); /* Púrpura medio (50% para rojo, 0% para verde, 50% para azul) */
+    background-color: rgb(85%, 85%, 100%); /* Azul claro (85% para rojo, 85% para verde, 100% para azul) */
+    padding: 10px; /* Añade espacio interno alrededor del texto */
+    border: 1px solid gray; /* Borde gris */
+}
+
+/* Configura el color de fondo y texto para los divs usando valores RGB enteros y porcentuales */
+div {
+    color: rgb(0, 0, 0); /* Negro puro (0 para rojo, verde, y azul) */
+    background-color: rgb(255, 165, 0); /* Naranja (255 para rojo, 165 para verde, 0 para azul) */
+    padding: 20px; /* Añade espacio interno alrededor del contenido */
+    margin-top: 10px; /* Añade un margen superior para separar el div del contenido anterior */
+    border-radius: 5px; /* Redondea las esquinas del borde */
+}

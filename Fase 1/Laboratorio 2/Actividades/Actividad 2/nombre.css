@@ -1,0 +1,10 @@
+/* Estilo para el elemento h1 (encabezado principal) */
+h1 {
+    color: blue;
+    font-size: 2em;/* Tamaño de fuente aumentado */
+}
+/* Estilo para los elementos p (párrafos) */
+p {
+    color: green;
+    font-size: 1.2em;
+}

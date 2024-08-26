@@ -1,0 +1,26 @@
+/* Establece la fuente predeterminada para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Aplica color con código hexadecimal al título h1 */
+h1 {
+    color: #FF5733; /* Naranja fuerte (#FF5733) */
+}
+
+/* Establece el color de texto y fondo para los párrafos usando código hexadecimal */
+p {
+    color: #2E8B57; /* Verde mar (#2E8B57) */
+    background-color: #F0E68C; /* Amarillo kaki (#F0E68C) */
+    padding: 10px; /* Añade espacio interno alrededor del texto */
+    border: 1px solid #8B4513; /* Borde marrón (#8B4513) */
+}
+
+/* Configura el color de fondo y texto para los divs usando código hexadecimal */
+div {
+    color: #FFFFFF; /* Blanco puro (#FFFFFF) */
+    background-color: #4682B4; /* Azul acero (#4682B4) */
+    padding: 20px; /* Añade espacio interno alrededor del contenido */
+    margin-top: 10px; /* Añade un margen superior para separar el div del contenido anterior */
+    border-radius: 5px; /* Redondea las esquinas del borde */
+}

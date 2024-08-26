@@ -1,0 +1,46 @@
+<!--ARCHIVO : index_herenciaycascada.html -->
+<!--AUTOR : Ricardo Gabriel Manrique Silva -->
+<!--FECHA : 24/08/2024 -->
+<!--DESCRIPCIÓN : Archivo html para llamar a herenciaycascada.css -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que se muestra en la pestaña -->
+    <title>Utilización de Herencia y Cascada</title>
+    <!-- Vinculación con "herenciaycascada.css" -->
+    <link rel="stylesheet" href="herenciaycascada.css">
+</head>
+<body>
+    <!-- Título de la página -->
+    <h1>Ejemplos de Herencia y Cascada</h1>
+
+    <!-- Contenedor principal con varias etiquetas -->
+    <div class="container">
+        <p>Texto dentro de un contenedor <em>y con texto enfatizado.</em></p> <!-- Color gris para <p> y Estilo para <em> -->
+        <span>Este es un span dentro de un párrafo.</span> <!-- Color azul oscuro -->
+        <strong>Texto fuerte en un contenedor.</strong> <!-- Negrita y azul -->
+        <code>Código dentro de un contenedor.</code> <!-- Fuente monoespaciada y color azul marino -->
+    </div>
+
+    <!-- Otro contenedor con una lista -->
+    <div class="list-container">
+        <ul>
+            <li>Elemento de lista 1</li>
+            <li>Elemento de lista 2</li>
+            <li>Elemento de lista 3</li> <!-- Color verde por ul -->
+        </ul>
+        <h2>Título dentro de la lista</h2> <!-- Se verá en morado-->
+        <p>Párrafo dentro de la lista.</p> <!-- Se verá en negro -->
+        <h3>Título de Header 3 dentro de la lista</h3> <!-- Se verá en negro -->
+    </div>
+
+    <!-- Títulos y párrafos para cascada -->
+    <h2>Título de Header 2</h2> <!-- Se verá en rojo -->
+    <p>Párrafo después del título 2.</p> <!-- Se verá en gris -->
+    
+    <h3>Título de Header 3</h3> <!-- Se verá en marrón -->
+    <p>Párrafo después del título 3.</p> <!-- Se verá en gris -->
+</body>
+</html>

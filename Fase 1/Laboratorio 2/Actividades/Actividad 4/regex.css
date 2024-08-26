@@ -1,0 +1,36 @@
+/*************************************************************************************************
+ARCHIVO : regex.css
+AUTOR : Ricardo Gabriel Manrique Silva
+FECHA : 24/08/2024
+DESCRIPCIÓN : Utilización de selectores regex - CSS
+*************************************************************************************************/
+/* Selector Regex: Empieza con */
+/* Aplica estilo a los enlaces cuyo href empieza con "https" */
+a[href^="https"] {
+    color: green; /* Color verde para enlaces seguros */
+}
+
+/* Selector Regex: Termina con */
+/* Aplica estilo a los enlaces cuyo href termina con ".pdf" */
+a[href$=".pdf"] {
+    color: red; /* Color rojo para enlaces a PDF */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Selector Regex: Contiene */
+/* Aplica estilo a los enlaces cuyo href contiene "asd" */
+a[href*="asd"] {
+    text-decoration: none; /* Quita subrayado */
+}
+
+/* Selector Regex: Empieza con "#" */
+/* Aplica estilo a los enlaces cuyo href empieza con "#" */
+a[href^="#"] {
+    background-color: yellow; /* Fondo amarillo */
+}
+
+/* Selector Regex: Termina con ".jpg" */
+/* Aplica estilo a los enlaces cuyo href termina con ".jpg" */
+a[href$=".jpg"] {
+    border: 2px solid blue; /* Borde azul de 2px */
+}
