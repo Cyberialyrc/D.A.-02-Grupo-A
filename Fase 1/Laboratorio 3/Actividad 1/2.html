@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <!-- Define el estilo para la página -->
+    <style>
+        /* Estilo para el contenedor principal */
+        #main { 
+            width: 200px; /* Ancho del contenedor principal */
+            height: 200px; /* Altura del contenedor principal */
+            border: 1px solid #c3c3c3; /* Borde del contenedor principal */
+            display: flex; /* Usar Flexbox para el diseño */
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+        }
+
+        /* Estilo para los elementos dentro del contenedor principal */
+        #main div { 
+            width: 50px; /* Ancho de cada elemento dentro del contenedor */
+            height: 50px; /* Altura de cada elemento dentro del contenedor */
+        }
+    </style>
+</head> 
+<body> 
+    <!-- Título de la página -->
+    <h1>The flex-wrap Property</h1>
+
+    <!-- Contenedor principal que utiliza Flexbox -->
+    <div id="main"> 
+        <!-- Elementos dentro del contenedor principal con diferentes colores de fondo -->
+        <div style="background-color:coral;">A</div>
+        <div style="background-color:lightblue;">B</div>
+        <div style="background-color:khaki;">C</div>
+        <div style="background-color:pink;">D</div>
+        <div style="background-color:lightgrey;">E</div>
+        <div style="background-color:lightgreen;">F</div>
+    </div>
+
+    <!-- Nota sobre la compatibilidad del navegador -->
+    <p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the flex-wrap property.</p> 
+</body> 
+</html>

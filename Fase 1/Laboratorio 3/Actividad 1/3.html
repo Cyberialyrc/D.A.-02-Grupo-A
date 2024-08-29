@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <!-- Define el estilo para la página -->
+    <style>
+        /* Estilo para el contenedor Flexbox */
+        .flex-container { 
+            display: flex; /* Activa el uso de Flexbox para el contenedor */
+            align-items: stretch; /* Estira los elementos hijos para que llenen el contenedor */
+            background-color: #f1f1f1; /* Color de fondo del contenedor */
+        }
+
+        /* Estilo para los elementos dentro del contenedor Flexbox */
+        .flex-container > div { 
+            background-color: DodgerBlue; /* Color de fondo de cada elemento */
+            color: white; /* Color del texto dentro de cada elemento */
+            margin: 10px; /* Espacio alrededor de cada elemento */
+            text-align: center; /* Alinea el texto al centro */
+            line-height: 75px; /* Altura de la línea, centra el texto verticalmente */
+            font-size: 30px; /* Tamaño de la fuente del texto */
+        }
+    </style>
+</head> 
+<body> 
+    <!-- Título principal de la página -->
+    <h1>The flex-grow Property</h1>
+
+    <!-- Descripción del efecto de la propiedad flex-grow -->
+    <p>Make the third flex item grow eight times faster than the other flex items:</p>
+
+    <!-- Contenedor Flexbox que contiene tres elementos -->
+    <div class="flex-container">
+        <!-- Primer elemento con una tasa de crecimiento de 1 -->
+        <div style="flex-grow: 1">1</div>
+        <!-- Segundo elemento con una tasa de crecimiento de 1 -->
+        <div style="flex-grow: 1">2</div>
+        <!-- Tercer elemento con una tasa de crecimiento de 8 -->
+        <div style="flex-grow: 8">3</div>
+    </div>
+
+</body> 
+</html>

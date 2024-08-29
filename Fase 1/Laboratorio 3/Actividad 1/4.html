@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <!-- Define el estilo para la página -->
+    <style>
+        /* Estilo para el contenedor Flexbox */
+        .flex-container { 
+            display: flex; /* Activa el uso de Flexbox para el contenedor, permitiendo un diseño flexible */
+            align-items: stretch; /* Estira los elementos hijos para que ocupen todo el alto del contenedor */
+            background-color: #f1f1f1; /* Color de fondo del contenedor Flexbox */
+        }
+
+        /* Estilo para los elementos dentro del contenedor Flexbox */
+        .flex-container > div { 
+            background-color: DodgerBlue; /* Color de fondo de cada elemento flex */
+            color: white; /* Color del texto dentro de cada elemento */
+            width: 100px; /* Ancho fijo de cada elemento flex */
+            margin: 10px; /* Espacio alrededor de cada elemento flex */
+            text-align: center; /* Alinea el texto al centro horizontalmente */
+            line-height: 75px; /* Ajusta la altura de la línea para centrar verticalmente el texto */
+            font-size: 30px; /* Tamaño de la fuente del texto */
+        }
+    </style>
+</head> 
+<body> 
+    <!-- Título principal de la página -->
+    <h1>The flex-shrink Property</h1>
+
+    <!-- Descripción del efecto de la propiedad flex-shrink -->
+    <p>Do not let the third flex item shrink as much as the other flex items:</p>
+
+    <!-- Contenedor Flexbox que contiene varios elementos -->
+    <div class="flex-container">
+        <!-- Primer elemento dentro del contenedor Flexbox -->
+        <div>1</div>
+        <!-- Segundo elemento dentro del contenedor Flexbox -->
+        <div>2</div>
+        <!-- Tercer elemento dentro del contenedor Flexbox con flex-shrink: 0 -->
+        <div style="flex-shrink: 0">3</div>
+        <!-- Cuarto elemento dentro del contenedor Flexbox -->
+        <div>4</div>
+        <!-- Quinto elemento dentro del contenedor Flexbox -->
+        <div>5</div>
+        <!-- Sexto elemento dentro del contenedor Flexbox -->
+        <div>6</div>
+        <!-- Séptimo elemento dentro del contenedor Flexbox -->
+        <div>7</div>
+        <!-- Octavo elemento dentro del contenedor Flexbox -->
+        <div>8</div>
+        <!-- Noveno elemento dentro del contenedor Flexbox -->
+        <div>9</div>
+        <!-- Décimo elemento dentro del contenedor Flexbox -->
+        <div>10</div>
+    </div>
+
+</body> 
+</html>

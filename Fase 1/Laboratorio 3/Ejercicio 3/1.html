@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define la codificación de caracteres y asegura que la página sea responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <style>
+        /* Estilo base para la página */
+        body {
+            font-family: Arial, sans-serif; /* Fuente general de la página */
+            margin: 0; /* Elimina márgenes por defecto */
+            padding: 0; /* Elimina rellenos por defecto */
+        }
+
+        /* Estilo para el contenedor principal */
+        .container {
+            max-width: 1200px; /* Ancho máximo del contenedor */
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+            padding: 20px; /* Espacio interno del contenedor */
+        }
+
+        /* Estilo para el menú */
+        .menu {
+            display: flex; /* Usa flexbox para alinear los elementos del menú */
+            justify-content: space-between; /* Espacia los elementos del menú */
+            background-color: #333; /* Color de fondo del menú */
+            padding: 10px 20px; /* Espacio interno del menú */
+            color: white; /* Color del texto del menú */
+        }
+
+        /* Estilo para los enlaces del menú */
+        .menu a {
+            color: white; /* Color del texto de los enlaces */
+            text-decoration: none; /* Quita el subrayado de los enlaces */
+            margin: 0 10px; /* Espacio horizontal entre los enlaces */
+        }
+
+        /* Estilo para el contenido principal */
+        .main-content {
+            padding: 20px; /* Espacio interno del contenido principal */
+        }
+
+        /* Estilo para el footer */
+        .footer {
+            background-color: #333; /* Color de fondo del footer */
+            color: white; /* Color del texto del footer */
+            text-align: center; /* Centra el texto en el footer */
+            padding: 10px 0; /* Espacio interno del footer */
+        }
+
+        /* Estilos específicos para pantallas menores a 900px */
+        @media (max-width: 900px) {
+            .menu {
+                flex-direction: column; /* Coloca los elementos del menú en una columna */
+                align-items: center; /* Alinea los elementos del menú en el centro */
+            }
+
+            .menu a {
+                margin: 5px 0; /* Espacio vertical entre los enlaces del menú */
+            }
+        }
+
+        /* Estilos específicos para pantallas menores a 480px */
+        @media (max-width: 480px) {
+            .menu {
+                background-color: #555; /* Cambia el color de fondo del menú en pantallas pequeñas */
+                padding: 5px; /* Reduce el espacio interno del menú */
+            }
+
+            .menu a {
+                font-size: 14px; /* Reduce el tamaño de la fuente de los enlaces */
+                margin: 3px 0; /* Espacio vertical reducido entre los enlaces */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor principal de la página -->
+    <div class="container">
+        <!-- Menú de navegación -->
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- Contenido principal de la página -->
+        <div class="main-content">
+            <h1>Welcome to Our Website</h1>
+            <p>This is an example of a responsive page with Flexbox and media queries.</p>
+        </div>
+
+        <!-- Footer de la página -->
+        <div class="footer">
+            <p>&copy; 2024 Responsive Page. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

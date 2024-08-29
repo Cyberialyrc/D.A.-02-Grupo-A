@@ -1,0 +1,59 @@
+<!-- Declaración del tipo de documento HTML5 -->
+<!DOCTYPE html>
+
+<!-- Elemento raíz del documento HTML -->
+<html>
+
+  <!-- Sección del encabezado del documento -->
+  <head>
+
+    <!-- Estilos CSS para el documento -->
+    <style>
+      /* Estilos para el elemento con id "main" */
+      #main {
+        /* Ancho del elemento */
+        width: 400px; /* Establece el ancho del elemento en 400 píxeles */
+        /* Alto del elemento */
+        height: 400px; /* Establece el alto del elemento en 400 píxeles */
+        /* Borde de 1 píxel sólido con color #c3c3c3 */
+        border: 1px solid #c3c3c3; /* Establece un borde de 1 píxel sólido con color #c3c3c3 */
+        /* Display flex para que los elementos hijos se distribuyan en una fila */
+        display: flex; /* Establece el display del elemento en flex */
+        /* Dirección de la fila: de derecha a izquierda */
+        flex-direction: row-reverse; /* Establece la dirección de la fila en row-reverse */
+      }
+
+      /* Estilos para los elementos div dentro del elemento con id "main" */
+      #main div {
+        /* Ancho de cada elemento div */
+        width: 50px; /* Establece el ancho de cada elemento div en 50 píxeles */
+        /* Alto de cada elemento div */
+        height: 50px; /* Establece el alto de cada elemento div en 50 píxeles */
+      }
+    </style>
+
+  </head>
+
+  <!-- Sección del cuerpo del documento -->
+  <body>
+
+    <!-- Título de la página -->
+    <h1>The flex-direction Property</h1> /* Establece el título de la página */
+
+    <!-- Elemento con id "main" que contiene los elementos div -->
+    <div id="main"> /* Establece el elemento con id "main" */
+      <!-- Elementos div con diferentes colores de fondo -->
+      <div style="background-color:coral;">A</div> /* Establece el primer elemento div con color de fondo coral */
+      <div style="background-color:lightblue;">B</div> /* Establece el segundo elemento div con color de fondo lightblue */
+      <div style="background-color:khaki;">C</div> /* Establece el tercer elemento div con color de fondo khaki */
+      <div style="background-color:pink;">D</div> /* Establece el cuarto elemento div con color de fondo pink */
+      <div style="background-color:lightgrey;">E</div> /* Establece el quinto elemento div con color de fondo lightgrey */
+      <div style="background-color:lightgreen;">F</div> /* Establece el sexto elemento div con color de fondo lightgreen */
+    </div>
+
+    <!-- Nota sobre la compatibilidad con Internet Explorer -->
+    <p><b>Note:</b> Internet Explorer 10 y versiones anteriores no admiten la propiedad flex-direction.</p> /* Establece la nota sobre la compatibilidad con Internet Explorer */
+
+  </body>
+
+</html>
