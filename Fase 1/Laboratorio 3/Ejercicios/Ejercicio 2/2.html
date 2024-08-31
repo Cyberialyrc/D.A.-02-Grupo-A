@@ -1,0 +1,64 @@
+<!--ARCHIVO : actividad2.html -->
+<!--AUTOR : Percy Aaron Lujan Biamonte -->
+<!--FECHA : 31/08/2024 -->
+<!-- DESCRIPCIÓN : Experiencia de actividad 2" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- For Font Awesome icons -->
+</head>
+<body>
+    <!-- Header -->
+    <header id="myHeader">
+        <i onclick="w3_open()" class="fa fa-bars"></i>
+        <div>
+            <h4>BEAUTIFUL RESPONSIVE WEB SITES</h4>
+            <h1>BUILT WITH W3.CSS</h1>
+            <div>
+                <button class="custom-btn" onclick="document.getElementById('id01').style.display='block'">
+                    LEARN W3.CSS
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-third">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <h3>Responsive</h3><br>
+                <i class="fa fa-desktop" style="font-size:120px"></i>
+                <p>Built-in responsiveness</p>
+                <p>Mobile first fluid grid</p>
+                <p>Fits any screen sizes</p>
+                <p>PC Tablet and Mobile</p>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <h3>Standard CSS</h3><br>
+                <i class="fa fa-css3" style="font-size:120px"></i>
+                <p>Standard CSS only</p>
+                <p>Easy to learn</p>
+                <p>No need for jQuery</p>
+                <p>No JavaScript library</p>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <h3>Design</h3><br>
+                <i class="fa fa-diamond" style="font-size:120px"></i>
+                <p>Paper like design</p>
+                <p>Bold colors and shadows</p>
+                <p>Equal across platforms</p>
+                <p>Equal across devices</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

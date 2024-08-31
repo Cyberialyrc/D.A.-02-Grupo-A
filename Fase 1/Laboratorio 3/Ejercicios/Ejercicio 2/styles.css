@@ -1,0 +1,87 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #333; /* Dark grey background */
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+
+header h1, header h4 {
+    margin: 0;
+}
+
+header .fa-bars {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+header .custom-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #333; /* Dark grey */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .custom-btn:hover {
+    background-color: #f0f0f0; /* Light grey */
+    color: black;
+}
+
+
+/* Card Styling */
+.w3-card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+.w3-container {
+    padding: 16px;
+}
+
+.w3-card i {
+    display: block;
+    margin: 0 auto;
+    color: #333;
+}
+
+.w3-card p {
+    margin: 8px 0;
+}
+
+.w3-row-padding {
+    margin: 0;
+}
+
+.w3-third {
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 16px;
+}
+
+.w3-margin-top {
+    margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+    .w3-third {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+}
