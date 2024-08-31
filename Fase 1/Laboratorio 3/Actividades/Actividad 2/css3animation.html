@@ -1,0 +1,59 @@
+<!--ARCHIVO : css3animation.html -->
+<!--AUTOR : Percy Aaron Lujan Biamonte -->
+<!--FECHA : 31/08/2024 -->
+<!-- DESCRIPCIÓN : Archivo HTML de marco teórico "CSS Animation" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad animation</title>
+    <style> 
+        /* 
+        Estilo para el div:
+        - width: Establece el ancho del div en 100px.
+        - height: Establece la altura del div en 100px.
+        - background: Aplica un color de fondo rojo al div.
+        - position: Establece la posición del div en relativa para que el desplazamiento se aplique correctamente.
+        - animation: Aplica la animación definida con las siguientes características:
+            - mymove: Nombre de la animación definida.
+            - 5s: La duración de la animación es de 5 segundos.
+            - infinite: La animación se repite de manera infinita.
+        */
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove 5s infinite;
+        }
+
+        /* 
+        Definición de la animación mymove:
+        - from: Define el estado inicial de la animación.
+        - to: Define el estado final de la animación.
+        - En esta animación, el div se mueve horizontalmente desde 0px hasta 200px.
+        */
+        @keyframes mymove {
+            from { left: 0px; }
+            to { left: 200px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Título de la página que describe la propiedad animation.
+    -->
+    <h1>La Propiedad animation</h1>
+
+    <!-- 
+    Párrafo que explica el efecto de la animación aplicada al div.
+    -->
+    <p>Desplaza un elemento de 0px a 200px hacia la izquierda. La animación dura 5 segundos. Luego comienza de nuevo y continúa indefinidamente (infinita).</p>
+
+    <!-- 
+    Un div al que se le aplica la animación de movimiento.
+    -->
+    <div></div>
+</body>
+</html>

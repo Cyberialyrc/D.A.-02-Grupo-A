@@ -1,0 +1,66 @@
+<!--ARCHIVO : css3boxradius.html -->
+<!--AUTOR : Percy Aaron Lujan Biamonte -->
+<!--FECHA : 31/08/2024 -->
+<!-- DESCRIPCIÓN : Archivo HTML de marco teórico "CSS3 Box radius" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad border-radius</title>
+    <style>
+        /* 
+        Estilo para el primer ejemplo:
+        - border: Aplica un borde de 2px de grosor y color rojo alrededor del div.
+        - padding: Añade 10px de espacio interno alrededor del contenido dentro del div.
+        - border-radius: Redondea las cuatro esquinas del div con un radio de 25px.
+        */
+        #example1 {
+            border: 2px solid red;
+            padding: 10px;
+            border-radius: 25px;
+        }
+
+        /* 
+        Estilo para el segundo ejemplo:
+        - border: Aplica un borde de 2px de grosor y color rojo alrededor del div.
+        - padding: Añade 10px de espacio interno alrededor del contenido dentro del div.
+        - border-radius: Redondea las esquinas con diferentes radios:
+            - 50px para la esquina superior izquierda y la esquina inferior derecha.
+            - 20px para la esquina superior derecha y la esquina inferior izquierda.
+        */
+        #example2 {
+            border: 2px solid red;
+            padding: 10px;
+            border-radius: 50px 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Título que describe el primer ejemplo de la propiedad border-radius.
+    -->
+    <h2>border-radius: 25px:</h2>
+
+    <!-- 
+    Primer div que muestra el efecto de un radio uniforme de 25px en las esquinas.
+    -->
+    <div id="example1">
+        <p>La propiedad border-radius define el radio de las esquinas del elemento.</p>
+    </div>
+
+    <!-- 
+    Título que describe el segundo ejemplo de la propiedad border-radius con valores diferentes.
+    -->
+    <h2>border-radius: 50px 20px:</h2>
+
+    <!-- 
+    Segundo div que muestra el efecto de un radio de esquina desigual, donde 
+    las esquinas superior izquierda e inferior derecha tienen un radio de 50px, 
+    mientras que las esquinas superior derecha e inferior izquierda tienen un radio de 20px.
+    -->
+    <div id="example2">
+        <p>Si se establecen dos valores; el primero es para la esquina superior izquierda e inferior derecha, y el segundo para la esquina superior derecha e inferior izquierda.</p>
+    </div>
+</body>
+</html>

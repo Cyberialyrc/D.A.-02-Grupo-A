@@ -1,0 +1,42 @@
+<!--ARCHIVO : css3degradados.html -->
+<!--AUTOR : Percy Aaron Lujan Biamonte -->
+<!--FECHA : 31/08/2024 -->
+<!-- DESCRIPCIÓN : Archivo HTML de marco teórico "CSS3 Degradado lineal" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degradado Lineal - De Izquierda a Derecha</title>
+    <style>
+        /* 
+        Estilo para el div con el degradado:
+        - height: Establece la altura del div en 200px.
+        - background-color: Aplica un color de fondo rojo como reserva para navegadores que no soportan degradados.
+        - background-image: Aplica un degradado lineal de izquierda a derecha,
+          comenzando con rojo y transicionando hacia amarillo.
+        */
+        #grad1 {
+            height: 200px;
+            background-color: red; /* Para navegadores que no soportan degradados */
+            background-image: linear-gradient(to right, red, yellow);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Título que describe el tipo de degradado aplicado.
+    -->
+    <h1>Degradado Lineal - De Izquierda a Derecha</h1>
+
+    <!-- 
+    Párrafo que explica el efecto del degradado en la página.
+    -->
+    <p>Este degradado lineal comienza con rojo en la izquierda, transicionando a amarillo hacia la derecha:</p>
+
+    <!-- 
+    Un div que contiene el degradado lineal aplicado mediante CSS.
+    -->
+    <div id="grad1"></div>
+</body>
+</html>

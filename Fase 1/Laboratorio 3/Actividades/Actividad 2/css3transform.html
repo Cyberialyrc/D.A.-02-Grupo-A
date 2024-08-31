@@ -1,0 +1,85 @@
+<!--ARCHIVO : css3transform.html -->
+<!--AUTOR : Percy Aaron Lujan Biamonte -->
+<!--FECHA : 31/08/2024 -->
+<!-- DESCRIPCIÓN : Archivo HTML de marco teórico "CSS transform" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad transform</title>
+    <style> 
+        /* 
+        Estilo para el div con la clase 'a':
+        - width: Establece el ancho del div en 150px.
+        - height: Establece la altura del div en 80px.
+        - background-color: Aplica un color de fondo amarillo al div.
+        - transform: Aplica una rotación de 20 grados al div.
+        */
+        div.a {
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            transform: rotate(20deg);
+        }
+
+        /* 
+        Estilo para el div con la clase 'b':
+        - width: Establece el ancho del div en 150px.
+        - height: Establece la altura del div en 80px.
+        - background-color: Aplica un color de fondo amarillo al div.
+        - transform: Aplica una inclinación (skew) en el eje Y de 20 grados al div.
+        */
+        div.b {
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            transform: skewY(20deg);
+        }
+
+        /* 
+        Estilo para el div con la clase 'c':
+        - width: Establece el ancho del div en 150px.
+        - height: Establece la altura del div en 80px.
+        - background-color: Aplica un color de fondo amarillo al div.
+        - transform: Aplica una escala en el eje Y de 1.5 (150% de su tamaño original) al div.
+        */
+        div.c {
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            transform: scaleY(1.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Título principal que describe la propiedad transform.
+    -->
+    <h1>La Propiedad transform</h1>
+
+    <!-- 
+    Sección para mostrar la rotación del div:
+    - transform: rotate(20deg)
+    -->
+    <h2>transform: rotate(20deg):</h2>
+    <div class="a">¡Hola Mundo!</div>
+    <br>
+
+    <!-- 
+    Sección para mostrar la inclinación en el eje Y del div:
+    - transform: skewY(20deg)
+    -->
+    <h2>transform: skewY(20deg):</h2>
+    <div class="b">¡Hola Mundo!</div>
+    <br>
+
+    <!-- 
+    Sección para mostrar la escala en el eje Y del div:
+    - transform: scaleY(1.5)
+    -->
+    <h2>transform: scaleY(1.5):</h2>
+    <div class="c">¡Hola Mundo!</div>
+
+</body>
+</html>

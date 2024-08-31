@@ -1,0 +1,41 @@
+<!--ARCHIVO : rwdimagenes.html -->
+<!--AUTOR : Percy Aaron Lujan Biamonte -->
+<!--FECHA : 31/08/2024 -->
+<!-- DESCRIPCIÓN : Archivo HTML de marco teórico "RWD Imagenes" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalado de Imágenes Responsivas</title>
+    <!-- 
+    La metaetiqueta "viewport" se asegura de que la página se muestre correctamente en dispositivos móviles, 
+    ajustando el ancho de la ventana gráfica al ancho de la pantalla del dispositivo.
+    -->
+    <style>
+        /* 
+        Estilo para las imágenes en la página. 
+        Se establece que la imagen ocupe el 100% del ancho del contenedor padre, 
+        manteniendo su proporción de aspecto original.
+        */
+        img {
+            width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+            height: auto; /* La altura se ajusta automáticamente para mantener la proporción de aspecto */
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Imagen que se ajustará automáticamente al tamaño del contenedor (normalmente el cuerpo de la página) 
+    según el tamaño de la ventana del navegador.
+    -->
+    <img src="img_chania.jpg" alt="Chania" width="460" height="345">
+    <!-- 
+    El atributo "alt" proporciona texto alternativo para la imagen, lo cual es importante para accesibilidad.
+    -->
+    <p>Redimensiona la ventana del navegador para ver cómo la imagen se escala.</p>
+    <!-- 
+    Párrafo explicativo que informa al usuario que la imagen se escalará 
+    automáticamente cuando cambie el tamaño de la ventana del navegador.
+    -->
+</body>

@@ -1,0 +1,62 @@
+<!--ARCHIVO : rwdQuerys.html -->
+<!--AUTOR : Percy Aaron Lujan Biamonte -->
+<!--FECHA : 31/08/2024 -->
+<!-- DESCRIPCIÓN : Archivo HTML de marco teórico "RWD Media Querys" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de la regla @media</title>
+    <!-- 
+    La metaetiqueta "viewport" establece cómo se debe mostrar la página en diferentes dispositivos, 
+    ajustando el ancho de la ventana gráfica al ancho de la pantalla del dispositivo.
+    -->
+    <style>
+        /* 
+        Estilos generales para el cuerpo de la página. 
+        Se establece un color de fondo amarillo por defecto.
+        */
+        body {
+            background-color: lightseagreen;
+            font-family: Arial, sans-serif; /* Establece la fuente por defecto */
+            color: black; /* Color del texto */
+            margin: 0; /* Elimina los márgenes del body */
+            padding: 20px; /* Añade espacio interno alrededor del contenido */
+        }
+
+        /* 
+        Regla @media que se activa cuando la pantalla tiene un ancho máximo de 600 píxeles.
+        En ese caso, cambia el color de fondo a azul claro.
+        */
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+                color: darkblue; /* Cambio de color del texto para mejor contraste */
+            }
+
+            h1 {
+                font-size: 24px; /* Reduce el tamaño del título en pantallas pequeñas */
+            }
+
+            p {
+                font-size: 16px; /* Reduce el tamaño del párrafo en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Título principal de la página.
+    La regla @media cambiará el tamaño del texto en pantallas pequeñas.
+    -->
+    <h1>La regla @media</h1>
+
+    <!-- 
+    Párrafo que explica cómo funciona la regla @media en este documento.
+    El color de fondo cambia a "lightblue" cuando el ancho de la ventana es de 600 píxeles o menos, 
+    de lo contrario es "yellow".
+    -->
+    <p>Redimensiona la ventana del navegador. Cuando el ancho de este documento es de 600 píxeles o menos, el color de fondo es "lightblue", de lo contrario es "lightseagreen".</p>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!--ARCHIVO : css3transition.html -->
+<!--AUTOR : Percy Aaron Lujan Biamonte -->
+<!--FECHA : 31/08/2024 -->
+<!-- DESCRIPCIÓN : Archivo HTML de marco teórico "CSS Transition" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de la Propiedad Abreviada transition</title>
+    <style> 
+        /* 
+        Estilo inicial para el div:
+        - width: Establece el ancho del div en 100px.
+        - height: Establece la altura del div en 100px.
+        - background: Aplica un color de fondo rojo al div.
+        - transition: Aplica una transición al cambio de ancho del div, con las siguientes características:
+            - width 2s: La transición afecta al ancho y dura 2 segundos.
+            - linear: La velocidad de la transición es constante.
+            - 1s: La transición tiene un retraso de 1 segundo antes de empezar.
+        */
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s linear 1s;
+        }
+
+        /* 
+        Estilo para el div cuando se pasa el cursor por encima:
+        - Al pasar el cursor sobre el div, su ancho cambia a 300px.
+        */
+        div:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Título de la página que describe el uso de la propiedad transition.
+    -->
+    <h1>Uso de la Propiedad Abreviada transition</h1>
+
+    <!-- 
+    Párrafo que invita al usuario a interactuar con el div para ver el efecto de transición.
+    -->
+    <p>Pasa el cursor sobre el elemento div a continuación, para ver el efecto de transición:</p>
+
+    <!-- 
+    Un div que cambia su tamaño (ancho) cuando se pasa el cursor por encima,
+    con una transición suave que tiene un retraso de 1 segundo.
+    -->
+    <div></div>
+
+    <!-- 
+    Párrafo que destaca una nota sobre el retraso de la transición.
+    -->
+    <p><b>Nota:</b> El efecto de transición tiene un retraso de 1 segundo antes de comenzar.</p>
+</body>
+</html>

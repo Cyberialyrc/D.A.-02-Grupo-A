@@ -1,0 +1,39 @@
+<!--ARCHIVO : css3gradienteradial.html -->
+<!--AUTOR : Percy Aaron Lujan Biamonte -->
+<!--FECHA : 31/08/2024 -->
+<!-- DESCRIPCIÓN : Archivo HTML de marco teórico "CSS3 Degradado radial" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degradado Radial - Paradas de Color Espaciadas Uniformemente</title>
+    <style>
+        /* 
+        Estilo para el div con el degradado radial:
+        - height: Establece la altura del div en 150px.
+        - width: Establece el ancho del div en 200px.
+        - background-color: Aplica un color de fondo rojo como reserva para navegadores que no soportan degradados.
+        - background-image: Aplica un degradado radial con tres paradas de color:
+          rojo en el centro, seguido de amarillo y luego verde hacia el borde.
+        */
+        #grad1 {
+            height: 150px;
+            width: 200px;
+            background-color: red; /* Para navegadores que no soportan degradados */
+            background-image: radial-gradient(red, yellow, green);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Título que describe el tipo de degradado aplicado.
+    -->
+    <h1>Degradado Radial - Paradas de Color Espaciadas Uniformemente</h1>
+
+    <!-- 
+    Un div que contiene el degradado radial aplicado mediante CSS.
+    -->
+    <div id="grad1"></div>
+</body>
+</html>
