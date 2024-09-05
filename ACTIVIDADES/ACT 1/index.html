@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Define el tipo de documento como HTML5 -->
+  <meta charset="UTF-8">
+  <!-- Establece la codificación de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Define que el contenido se ajusta al ancho del dispositivo para ser responsive -->
+  <title>Ejemplo JS</title>
+  <!-- El título que aparecerá en la pestaña del navegador -->
+</head>
+<body>
+  <!-- Cuerpo de la página donde se coloca el contenido visible -->
+
+  <h1>Interacción con JavaScript</h1>
+  <!-- Encabezado principal que indica el propósito de la página -->
+
+  <button id="myButton">Haz clic aquí</button>
+  <!-- Botón que el usuario puede hacer clic, tiene un id para ser identificado en JavaScript -->
+
+  <p id="result"></p>
+  <!-- Párrafo vacío donde se mostrará el resultado de la interacción con JavaScript, también tiene un id para ser manipulado -->
+
+  <script>
+    // Añadir un evento de clic al botón con id "myButton"
+    document.getElementById('myButton').addEventListener('click', function() {
+      // Cuando el botón se clickea, el texto del párrafo con id "result" cambiará
+      document.getElementById('result').textContent = '¡Botón clickeado!';
+      // Cambia el contenido del párrafo a '¡Botón clickeado!' al hacer clic en el botón
+    });
+  </script>
+  <!-- Sección donde va el código JavaScript que agrega la funcionalidad -->
+</body>
+</html>
+
