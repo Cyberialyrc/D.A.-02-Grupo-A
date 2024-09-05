@@ -9,7 +9,7 @@ function getTemperatureInput() {
     let temperature;
     while (true) {
         temperature = parseFloat(prompt("Ingrese la temperatura: ")); //Ingreso de la temperatura
-        if (!isNaN(temperature)) break;
+        if (!isNaN(temperature)) break; //Verifica que sea un número válido, sino entra al bucle denuevo
         console.log('Entrada no válida. Por favor, ingrese un número.');
     }
     return temperature;
@@ -19,7 +19,7 @@ function getScaleInput() {
     let scale;
     while (true) {
         scale = prompt("¿La temperatura se encuentra en Celsius o Fahrenheit? (C/F)").toUpperCase(); //Ingreso del tipo de temperatura, además lo convierte a mayúscula.
-        if (scale === 'C' || scale === 'F') break;
+        if (scale === 'C' || scale === 'F') break; //Verifica que sea C o F, sino entra al bucle denuevo
         console.log('La escala ingresada no es correcta, por favor ingrese C o F.');
     }
     return scale;
