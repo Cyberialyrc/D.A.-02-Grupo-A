@@ -1,3 +1,7 @@
+//ARCHIVO : Ejercicio3.js 
+//AUTOR : Percy Aaron Lujan Biamonte
+//FECHA : 07/09/24 
+//DESCRIPCIÓN : Archivo JavaScript para generar contraseñas segura y complejas
 function generarContrasena(longitud, incluirMayusculas = true, incluirMinusculas = true, incluirNumeros = true, incluirSimbolos = true) {
     const letrasMayusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const letrasMinusculas = 'abcdefghijklmnopqrstuvwxyz';

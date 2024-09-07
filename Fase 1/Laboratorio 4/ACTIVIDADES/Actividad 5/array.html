@@ -1,59 +1,38 @@
+//ARCHIVO : array.html 
+//AUTOR : Percy Aaron Lujan Biamonte
+//FECHA : 07/09/24 
+//DESCRIPCIÓN : Archivo HTML para mostrar diferentes funciones de Arrays
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingreso de Datos a Arreglos</title>
-    <script>
-        let numeros = [];
-        let palabras = [];
-        let objetos = [];
-        // Función para agregar números
-        function agregarNumeros() {
-            let cantidad = parseInt(prompt("¿Cuántos números deseas ingresar?"));
-            for (let i = 0; i < cantidad; i++) {
-                let numero = parseInt(prompt("Ingresa un número:"));
-                numeros.push(numero);
-            }
-            document.getElementById("numerosOutput").innerText = "Array de Números: " + numeros.join(", ");
-        }
-
-        // Función para agregar palabras
-        function agregarPalabras() {
-            let cantidad = parseInt(prompt("¿Cuántas palabras deseas ingresar?"));
-            for (let i = 0; i < cantidad; i++) {
-                let palabra = prompt("Ingresa una palabra:");
-                palabras.push(palabra);
-            }
-            document.getElementById("palabrasOutput").innerText = "Array de Palabras: " + palabras.join(", ");
-        }
-
-        // Función para agregar objetos
-        function agregarObjetos() {
-            let cantidad = parseInt(prompt("¿Cuántos objetos deseas ingresar?"));
-            for (let i = 0; i < cantidad; i++) {
-                let nombre = prompt("Ingresa el nombre:");
-                let edad = parseInt(prompt("Ingresa la edad:"));
-                let objeto = { nombre: nombre, edad: edad };
-                objetos.push(objeto);
-            }
-            // Formateo para mostrar los objetos como texto
-            let objetosTexto = objetos.map(obj => `Nombre: ${obj.nombre}, Edad: ${obj.edad}`).join(" | ");
-            document.getElementById("objetosOutput").innerText = "Array de Objetos: " + objetosTexto;
-        }
-    </script>
+    <script src="scriptAddtoArray.js"></script>
+    <script src="scriptArraysFunctions.js"></script>
 </head>
 <body>
     <h1>Ingreso de Datos a Arreglos</h1>
 
+    <h2>Array de Números</h2>
     <button onclick="agregarNumeros()">Agregar Números</button>
+    <button onclick="eliminarUltimoElemento(numeros)">Eliminar Último Número</button>
+    <button onclick="eliminarPrimerElemento(numeros)">Eliminar Primer Número</button>
+    <button onclick="accederNumero()">Acceder a Número</button>
+    <button onclick="encontrarIndiceNumero()">Encontrar Índice de Número</button>
     <p id="numerosOutput">Array de Números: </p>
 
+    <h2>Array de Palabras</h2>
     <button onclick="agregarPalabras()">Agregar Palabras</button>
+    <button onclick="eliminarUltimoElemento(palabras)">Eliminar Última Palabra</button>
+    <button onclick="eliminarPrimerElemento(palabras)">Eliminar Primera Palabra</button>
+    <button onclick="accederPalabra()">Acceder a Palabra</button>
+    <button onclick="encontrarIndicePalabra()">Encontrar Índice de Palabra</button>
     <p id="palabrasOutput">Array de Palabras: </p>
-
+    
     <button onclick="agregarObjetos()">Agregar Objetos</button>
     <p id="objetosOutput">Array de Objetos: </p>
+    
     
 </body>
 </html>
