@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Datos a Arreglos</title>
+    <script>
+        /*
+        let nums = [1, 12, 23, 34, 45];
+        let cadena = new Array('Primero', 'Segundo', 'Tercero', 'Cuarto');
+        let objetos = Array.of(
+            { nombre: 'Pepe', dni: 987654321 },
+            { nombre: 'Jose', dni: 123456789 }
+        );
+*/
+        // Función para agregar números
+        function agregarNumeros() {
+            let cantidad = parseInt(prompt("¿Cuántos números deseas ingresar?"));
+            for (let i = 0; i < cantidad; i++) {
+                let numero = parseInt(prompt("Ingresa un número:"));
+                numeros.push(numero);
+            }
+            document.getElementById("numerosOutput").innerText = "Array de Números: " + numeros.join(", ");
+        }
+
+        // Función para agregar palabras
+        function agregarPalabras() {
+            let cantidad = parseInt(prompt("¿Cuántas palabras deseas ingresar?"));
+            for (let i = 0; i < cantidad; i++) {
+                let palabra = prompt("Ingresa una palabra:");
+                palabras.push(palabra);
+            }
+            document.getElementById("palabrasOutput").innerText = "Array de Palabras: " + palabras.join(", ");
+        }
+
+        // Función para agregar objetos
+        function agregarObjetos() {
+            let cantidad = parseInt(prompt("¿Cuántos objetos deseas ingresar?"));
+            for (let i = 0; i < cantidad; i++) {
+                let nombre = prompt("Ingresa el nombre:");
+                let edad = parseInt(prompt("Ingresa la edad:"));
+                let objeto = { nombre: nombre, edad: edad };
+                objetos.push(objeto);
+            }
+            // Formateo para mostrar los objetos como texto
+            let objetosTexto = objetos.map(obj => `Nombre: ${obj.nombre}, Edad: ${obj.edad}`).join(" | ");
+            document.getElementById("objetosOutput").innerText = "Array de Objetos: " + objetosTexto;
+        }
+    </script>
+</head>
+<body>
+    <h1>Ingreso de Datos a Arreglos</h1>
+
+    <button onclick="agregarNumeros()">Agregar Números</button>
+    <p id="numerosOutput">Array de Números: </p>
+
+    <button onclick="agregarPalabras()">Agregar Palabras</button>
+    <p id="palabrasOutput">Array de Palabras: </p>
+
+    <button onclick="agregarObjetos()">Agregar Objetos</button>
+    <p id="objetosOutput">Array de Objetos: </p>
+    
+</body>
+</html>
