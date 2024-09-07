@@ -1,7 +1,7 @@
-//ARCHIVO : Ejercicio2.js //
-//AUTOR : Ricardo Gabriel Manrique Silva //
-//FECHA : 07/09/24 //
-//DESCRIPCIÓN : Archivo JavaScript para convertir grados celsius a fahrenheit y viceversa // 
+//ARCHIVO : Ejercicio2.js 
+//AUTOR : Ricardo Gabriel Manrique Silva 
+//FECHA : 07/09/24 
+//DESCRIPCIÓN : Archivo JavaScript para convertir grados celsius a fahrenheit y viceversa 
 function CelsiusToFahrenheit(celsius) { //Función para convertir grados celsius a fahrenheit
     return (celsius * 9/5) + 32;
 }
