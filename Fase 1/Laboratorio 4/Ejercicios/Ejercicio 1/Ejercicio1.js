@@ -1,3 +1,7 @@
+//ARCHIVO : Ejercicio1.js 
+//AUTOR : Ricardo Gabriel Manrique Silva 
+//FECHA : 07/09/24 
+//DESCRIPCIÓN : Archivo JavaScript para calcular propina a base de un porcentaje y el total de la cuenta  
 function Tips(Total, Percentage) { //Función para calcular la propina a base del porcentaje y con este, el total a pagar de la cuenta
     if (Total < 0 || Percentage < 0) { //Validación si son negativos
         return {
