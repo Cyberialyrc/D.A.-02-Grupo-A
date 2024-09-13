@@ -1,0 +1,13 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+  }
+  
+  .box {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(223, 35, 35);
+    @include border-radius(10px); // Esto agrega los bordes redondeados
+  }
+  

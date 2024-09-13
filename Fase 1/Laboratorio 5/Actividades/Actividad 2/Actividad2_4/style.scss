@@ -1,0 +1,31 @@
+$primary-color: #db9834;
+$hover-color: #d7e653;
+$text-color: white;
+
+.menu {
+  background-color: $primary-color;
+  padding: 10px;
+
+  ul {
+    list-style: none; // Quita los puntos de la lista
+    margin: 0;
+    padding: 0;
+    display: flex; // Coloca los elementos en línea
+  }
+
+  li {
+    margin-right: 20px; // Espaciado entre los elementos del menú
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+      padding: 10px;
+      display: block;
+
+      &:hover {
+        background-color: $hover-color;
+        border-radius: 5px;
+      }
+    }
+  }
+}

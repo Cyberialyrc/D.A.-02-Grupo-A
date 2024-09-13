@@ -1,0 +1,11 @@
+$base-spacing: 16px;
+
+@function calculate-spacing($multiplier) {
+  @return $base-spacing * $multiplier;
+}
+
+.container {
+  padding: calculate-spacing(2); // Espaciado calculado como 16px * 2 = 32px
+  background-color: #66db23;
+  border: 1px solid #72d369;
+}

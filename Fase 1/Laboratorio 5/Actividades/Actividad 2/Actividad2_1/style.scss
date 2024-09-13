@@ -1,0 +1,22 @@
+$primary-color: #268ed3;
+$secondary-color: #f0f0f0; // Nuevo color para fondo
+$font-stack: 'Helvetica', sans-serif;
+$base-spacing: 16px;
+
+body {
+  font-family: $font-stack;
+  color: $primary-color;
+  background-color: $secondary-color; // Añadir color de fondo
+  margin: $base-spacing;
+}
+
+h1 {
+  background-color: lighten($primary-color, 20%); // Fondo más claro para el título
+  padding: $base-spacing;
+}
+
+p {
+  background-color: darken($primary-color, 10%); // Fondo más oscuro para los párrafos
+  padding: $base-spacing;
+  border-radius: 5px;
+}

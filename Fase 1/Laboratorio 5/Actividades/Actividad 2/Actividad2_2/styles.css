@@ -1,0 +1,9 @@
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: lightgrey;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+  

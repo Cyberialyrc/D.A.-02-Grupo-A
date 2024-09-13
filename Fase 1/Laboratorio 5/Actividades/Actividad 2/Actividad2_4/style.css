@@ -1,0 +1,23 @@
+.menu {
+  background-color: #db9834;
+  padding: 10px;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu li {
+  margin-right: 20px;
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+}
+.menu li a:hover {
+  background-color: #d7e653;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */
