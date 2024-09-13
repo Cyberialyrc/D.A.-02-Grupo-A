@@ -1,0 +1,87 @@
+header {
+  background-color: #3498db;
+  padding: 16px;
+  position: relative;
+}
+header .header-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  color: #ecf0f1;
+  background-color: #3498db;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+header nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+header .logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: auto;
+}
+
+.content {
+  padding: 16px;
+}
+.content h1 {
+  font-family: "Roboto", sans-serif;
+  color: #2c3e50;
+}
+.content p {
+  font-family: "Arial", sans-serif;
+  color: #2ecc71;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+.image-gallery .image-item {
+  width: 30%;
+  text-align: center;
+}
+.image-gallery .image-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.image-gallery .image-item img:hover {
+  transform: scale(1.05);
+}
+.image-gallery .image-item p {
+  font-family: "Arial", sans-serif;
+  color: #2c3e50;
+  margin-top: 8px;
+  text-align: justify;
+}
+
+footer {
+  background-color: #217dbb;
+  padding: 8px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+footer p {
+  color: #ecf0f1;
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */

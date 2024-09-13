@@ -1,0 +1,144 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$dark-color: #2c3e50;
+$light-color: #ecf0f1;
+
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Arial', sans-serif;
+
+$base-font-size: 16px;
+$small-spacing: 8px;
+$medium-spacing: 16px;
+$large-spacing: 32px;
+
+// Mixins
+@mixin box-shadow($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur $color;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin transition($property, $time) {
+  transition: $property $time ease-in-out;
+}
+
+// Funciones
+@function darken-color($color, $amount) {
+  @return darken($color, $amount);
+}
+
+@function lighten-color($color, $amount) {
+  @return lighten($color, $amount);
+}
+
+// Estilos del header
+header {
+  background-color: $primary-color;
+  padding: $medium-spacing;
+  position: relative;
+
+  .header-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: $light-color;
+    background-color: $primary-color;
+    padding: $small-spacing;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: $small-spacing;
+
+      li {
+        a {
+          color: $light-color;
+          text-decoration: none;
+
+          &:hover {
+            color: lighten-color($light-color, 10%);
+            @include transition(color, 0.3s);
+          }
+        }
+      }
+    }
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: auto;
+  }
+}
+
+// Estilos para el contenido
+.content {
+  padding: $medium-spacing;
+
+  h1 {
+    font-family: $font-primary;
+    color: $dark-color;
+  }
+
+  p {
+    font-family: $font-secondary;
+    color: $secondary-color;
+  }
+}
+
+// Galería de imágenes con descripción
+.image-gallery {
+  display: flex;
+  justify-content: space-around;
+  margin-top: $medium-spacing;
+
+  .image-item {
+    width: 30%;  // Limitar el ancho de cada contenedor de imagen
+    text-align: center;
+
+    img {
+      width: 100%;  // Aseguramos que la imagen ocupe todo el espacio disponible
+      @include border-radius(10px);
+      @include box-shadow(0px, 4px, 10px, rgba(0, 0, 0, 0.1));
+      @include transition(transform, 0.3s);
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    p {
+      font-family: $font-secondary;
+      color: $dark-color;
+      margin-top: $small-spacing;
+      text-align: justify;  // Justificación del texto para una mejor alineación
+    }
+  }
+}
+
+// Estilos del footer
+footer {
+  background-color: darken-color($primary-color, 10%);
+  padding: $small-spacing;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+
+  p {
+    color: $light-color;
+    font-size: $base-font-size;
+  }
+}
+
