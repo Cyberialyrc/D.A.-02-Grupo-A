@@ -1,0 +1,67 @@
+// ARCHIVO: stylesEJ3.scss
+// AUTOR: Ricardo Gabriel Manrique Silva
+// FECHA: 13/09/24
+// DESCRIPCIÓN: Archivo Sass que se utiliza para hacer el archivo stylesEJ3.css
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+body {
+    font-family: 'Arial', sans-serif; // Fuente predeterminada del cuerpo del documento
+}
+
+.navbar {
+    background-color: $primary-color; // Color de fondo de la barra de navegación
+    .nav-link {
+        color: black; // Color del texto de los enlaces de la barra de navegación
+        &:hover {
+            color: $secondary-color; // Cambia el color del enlace al hacer hover a gris
+        }
+    }
+}
+
+.gallery-item {
+    display: flex; 
+    flex-direction: column; // Apila los elementos (imagen y texto) verticalmente
+    justify-content: center; // Centra verticalmente los elementos dentro del contenedor
+    align-items: center; // Centra horizontalmente los elementos dentro del contenedor
+    margin: 10px;  /* Espacio entre los cuadros de la galería */
+    
+    .image-container {
+        height: 300px; /* Tamaño fijo para el contenedor de las imágenes */
+        width: 300px; /* Mantiene el ancho y alto iguales para el cuadro */
+        background-color: #f8f9fa;  /* Fondo claro para resaltar el contenedor */
+        border: 1px solid #ddd; /* Añade un borde para simular un cuadro */
+        justify-content: center;
+        align-items: center;   
+    }
+    img {
+        max-height: 100%;   /* La imagen ocupa el 100% del contenedor */
+        width: 100%;    /* Mantiene la proporción de la imagen */
+        object-fit: contain;  /* Asegura que la imagen no se distorsione */
+    }
+
+    h5 {
+        text-align: center; /* Centra el textp */
+        margin-top: 10px;; /* Espacio entre la imagen y el textp */
+    }
+}
+
+button {
+    &:hover {
+        background-color: darken($primary-color, 10%); // El botón se oscurece en un 10% al hacer hover
+    }
+}
+
+.table {
+    th, td {
+        vertical-align: middle; // Alinea el contenido de las celdas en el centro verticalmente
+    }
+
+    input[type="number"] {
+        width: 60px; // Define el ancho de los campos de entrada numérica
+    }
+
+    button {
+        background-color: $secondary-color; // Color de fondo para los botones dentro de la tabla
+    }
+}

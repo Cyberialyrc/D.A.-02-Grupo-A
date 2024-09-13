@@ -1,0 +1,59 @@
+/* ARCHIVO: styleEJ3.css */
+/* AUTOR: Ricardo Gabriel Manrique Silva */
+/* FECHA: 13/09/24 */
+/* DESCRIPCIÓN: Archivo CSS para estilos creado a partir del scss */
+@charset "UTF-8";
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.navbar {
+  background-color: #007bff;
+}
+.navbar .nav-link {
+  color: black;
+}
+.navbar .nav-link:hover {
+  color: #6c757d;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; /* Espacio entre los cuadros de la galería */
+}
+.gallery-item .image-container {
+  height: 300px; /* Tamaño fijo para el contenedor de las imágenes */
+  width: 300px; /* Mantiene el ancho y alto iguales para el cuadro */
+  background-color: #f8f9fa; /* Fondo claro para resaltar el contenedor */
+  border: 1px solid #ddd; /* Añade un borde para simular un cuadro */
+  justify-content: center;
+  align-items: center;
+}
+.gallery-item img {
+  max-height: 100%; /* La imagen ocupa el 100% del contenedor */
+  width: 100%; /* Mantiene la proporción de la imagen */
+  object-fit: contain; /* Asegura que la imagen no se distorsione */
+}
+.gallery-item h5 {
+  text-align: center; /* Centra el textp */
+  margin-top: 10px; /* Espacio entre la imagen y el textp */
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+.table input[type=number] {
+  width: 60px;
+}
+.table button {
+  background-color: #6c757d;
+}
+
+/*# sourceMappingURL=stylesEJ3.css.map */
