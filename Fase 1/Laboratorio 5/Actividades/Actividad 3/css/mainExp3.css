@@ -1,0 +1,62 @@
+/* ARCHIVO: mainExp3.css */
+/* AUTOR: Ricardo Gabriel Manrique Silva*/
+/* FECHA: 13/09/24 */
+/* DESCRIPCIÓN: Archivo Css generado en base al archivo sass, para los estilos */
+.navbar {
+  background-color: #f8f9fa; /* Color de fondo de la barra de navegación */
+  padding: 1rem; /* Añade espacio alrededor del contenido */
+}
+.navbar .nav-link {
+  color: #343a40; /* Color de los enlaces de navegación */
+}
+.navbar .nav-link:hover {
+  color: #007bff; /* Color de los enlaces cuando el usuario pasa el mouse */
+}
+.navbar .dropdown-menu {
+  background-color: #f8f9fa; /* Color de fondo del menú desplegable */
+  z-index: 1000; /* Asegura que el menú desplegable esté por encima de otros elementos */
+  right: 0; /* Alinea el menú desplegable a la derecha */
+  left: auto; /* Asegura que no se salga del borde izquierdo */
+}
+.navbar .dropdown-menu .dropdown-item {
+  color: #343a40; /* Color de los elementos dentro del menú desplegable */
+}
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #007bff; /* Cambia el fondo al pasar el mouse */
+  color: white; /* Cambia el color del texto al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center; /* Centra los elementos del menú en pantallas pequeñas */
+    margin-top: 10px; /* Añade margen superior para separarlos */
+  }
+  .dropdown-menu {
+    width: 100%; /* Hace que el menú desplegable ocupe todo el ancho */
+    position: absolute; /* Posiciona el menú relativo al contenedor */
+    top: 100%; /* Alinea el menú justo debajo de la barra de navegación */
+    left: 0; /* Alinea el menú al borde izquierdo */
+  }
+  .navbar-collapse {
+    width: 100%; /* Asegura que el menú ocupe todo el ancho en pantallas pequeñas */
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* El menú comienza invisible */
+  }
+  100% {
+    opacity: 1; /* El menú aparece gradualmente */
+  }
+}
+.dropdown-menu {
+  animation: fadeIn 0.5s ease-in-out; /* Aplica una animación de desvanecimiento al menú */
+  display: none; /* El menú está oculto por defecto */
+  position: absolute; /* El menú se posiciona relativo a su contenedor */
+}
+
+.show {
+  display: block; /* Muestra el menú cuando la clase show está activa */
+}
+
+/*# sourceMappingURL=mainExp3.css.map */

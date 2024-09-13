@@ -1,0 +1,46 @@
+<!-- ARCHIVO: indexExp3.html -->
+<!-- AUTOR: Ricardo Gabriel Manrique Silva -->
+<!-- FECHA: 13/09/24 -->
+<!-- DESCRIPCIÓN: Archivo HTML para la creación de un componente interactivo con Bootstrap y Sass-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title> <!-- Título que aparece en la pestaña -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Conexión con el bootstrap -->
+    <link rel="stylesheet" href="css/mainExp3.css"> <!-- Conexión con el archivo css -->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid"> <!-- Contenedor que ajusta el contenido a la pantalla -->
+            <a class="navbar-brand" href="#">Sitio</a>
+            <button class="navbar-toggler" type="button" id="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Contenedor colapsable para el menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <!-- Lista de navegación, alineada a la derecha con ms-auto -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a> <!-- Enlace de navegación -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a> <!-- Enlace de navegación -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"> <!-- Menú desplegable-->
+                            Más
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Acerca de</a></li>
+                            <li><a class="dropdown-item" href="#">Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="js/menuExp3.js"></script> <!-- Conexión con el archivo js-->
+</body>
+</html>

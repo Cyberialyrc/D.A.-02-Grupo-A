@@ -1,0 +1,72 @@
+// ARCHIVO: stylesExp3.scss
+// AUTOR: Ricardo Gabriel Manrique Silva
+// FECHA: 13/09/24
+// DESCRIPCIÓN: Archivo Sass que se utiliza para hacer el archivo mainExp3.css
+$bg-color: #f8f9fa; // Color de fondo de la barra de navegación
+$primary-color: #343a40; // Color principal para los textos de los enlaces de navegación
+$hover-color: #007bff; // Color de los enlaces cuando se pasa el mouse sobre ellos (hover)
+
+.navbar {
+    background-color: $bg-color; // Establece el color de fondo de la barra de navegación
+    padding: 1rem;  // Añade espacio alrededor del contenido dentro de la barra de navegación
+    
+    .nav-link {
+        color: $primary-color; // Color de los enlaces de navegación
+        &:hover {
+            color: $hover-color; // Color de los enlaces cuando se pasa el mouse sobre ellos
+        }
+    }
+
+    .dropdown-menu {
+        background-color: $bg-color; // Color de fondo del menú desplegable
+        z-index: 1000; // Asegura que el menú desplegable esté por encima de otros elementos
+        right: 0; // Alinea el menú desplegable al lado derecho
+        left: auto; // Elimina la alineación a la izquierda
+
+        .dropdown-item {
+            color: $primary-color; // Color del texto dentro de los elementos del menú desplegable
+            &:hover {
+                background-color: $hover-color; // Color de fondo cuando se pasa el mouse sobre un elemento del menú
+                color: white; // Cambia el color del texto a blanco al hacer hover
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center; // Centra los elementos del menú en pantallas pequeñas
+        margin-top: 10px; // Añade un margen superior para que no esté tan cerca del borde
+    }
+
+    .dropdown-menu {
+        width: 100%; // Hace que el menú desplegable ocupe todo el ancho en pantallas pequeñas
+        position: absolute; // Posiciona el menú desplegable de forma que no esté flotando
+        top: 100%; // Coloca el menú justo debajo de la barra de navegación
+        left: 0; // Alinea el menú desplegable con el borde izquierdo de la pantalla
+    }
+
+    .navbar-collapse {
+        width: 100%; // Asegura que el contenedor de los enlaces ocupe todo el ancho en pantallas pequeñas
+    }
+}
+
+// Animaciones para el menú desplegable
+@keyframes fadeIn {
+    0% {
+        opacity: 0; // El menú comienza invisible
+    }
+    100% {
+        opacity: 1; // El menú aparece gradualmente
+    }
+}
+
+.dropdown-menu {
+    animation: fadeIn 0.5s ease-in-out; // Aplica la animación al menú desplegable
+    display: none; // Oculta el menú por defecto
+    position: absolute; // Asegura que el menú se posicione relativo a su elemento padre
+}
+
+.show {
+    display: block;  // Muestra el menú desplegable cuando está activo
+}
