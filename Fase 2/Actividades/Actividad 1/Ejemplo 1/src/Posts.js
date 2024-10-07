@@ -1,3 +1,9 @@
+/*************************************************************************************************
+ARCHIVO		: Posts.js
+AUTOR		: Lujan Biamonte Percy Aaron
+FECHA		: 06/10/2024
+DESCRIPCIÓN	: Archivo para mostrar coleccionar los posts para app.
+*************************************************************************************************/
 import React from 'react';
 import { Link } from 'react-router-dom';
 

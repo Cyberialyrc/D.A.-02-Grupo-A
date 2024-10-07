@@ -1,3 +1,9 @@
+/*************************************************************************************************
+ARCHIVO		: Post.js
+AUTOR		: Lujan Biamonte Percy Aaron
+FECHA		: 06/10/2024
+DESCRIPCIÓN	: Archivo para mostrar los comentarios de un post para app.
+*************************************************************************************************/
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Comments from './Comments';

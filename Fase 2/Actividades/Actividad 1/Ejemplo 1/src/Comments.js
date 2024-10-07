@@ -1,3 +1,9 @@
+/*************************************************************************************************
+ARCHIVO		: Comments.css
+AUTOR		: Lujan Biamonte Percy Aaron
+FECHA		: 06/10/2024
+DESCRIPCIÓN	: Archivo para juntar y mostrar los comentarios de un post.
+*************************************************************************************************/
 import React, { useState, useEffect } from 'react';
 
 function Comments({ postId }) {
