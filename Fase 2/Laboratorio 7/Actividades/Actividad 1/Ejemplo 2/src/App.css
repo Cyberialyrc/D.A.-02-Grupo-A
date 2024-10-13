@@ -1,0 +1,188 @@
+/*************************************************************************************************
+ARCHIVO		: App.css
+AUTOR		: Ricardo Gabriel Manrique Silva
+FECHA		: 06/10/2024
+DESCRIPCIÓN	: Archivo CSS que se encarga de darle estilo a toda la página web.
+*************************************************************************************************/
+/* Estilo para toda la página */
+body {
+    /* Fuente predeterminada de la página */
+    font-family: 'Arial', sans-serif;
+    
+    /* Elimina márgenes y rellenos predeterminados */
+    margin: 0;
+    padding: 0;
+    
+    /* Color de fondo claro para toda la página */
+    background-color: #f4f4f4;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    /* Fondo oscuro para la barra de navegación */
+    background-color: #333;
+    
+    /* Espaciado dentro de la barra */
+    padding: 10px;
+    
+    /* Centra el contenido de la barra de navegación */
+    text-align: center;
+}
+
+/* Elimina los estilos de lista predeterminados y ajusta los márgenes */
+nav ul {
+    list-style-type: none; /* Sin viñetas en la lista */
+    padding: 0; /* Elimina el relleno interno */
+    margin: 0; /* Elimina el margen externo */
+}
+
+/* Estilos para los elementos de la lista dentro de la barra de navegación */
+nav ul li {
+    /* Alinea los elementos de la lista en una sola fila */
+    display: inline;
+    
+    /* Espaciado entre los elementos de la lista */
+    margin-right: 20px;
+}
+
+/* Estilos para los enlaces dentro de la barra de navegación */
+nav ul li a {
+    /* Color de los enlaces (blanco) */
+    color: white;
+    
+    /* Elimina el subrayado predeterminado */
+    text-decoration: none;
+    
+    /* Ajusta el tamaño de la fuente */
+    font-size: 18px;
+}
+
+/* Estilo cuando se pasa el cursor sobre los enlaces */
+nav ul li a:hover {
+    /* Añade un subrayado al pasar el mouse */
+    text-decoration: underline;
+}
+
+/* Estilos para la sección de Cursos */
+.courses-container {
+    /* Establece un ancho máximo y centra la sección */
+    max-width: 800px;
+    margin: 40px auto;
+    
+    /* Añade relleno interno y un fondo blanco */
+    padding: 20px;
+    background-color: white;
+    
+    /* Bordes redondeados */
+    border-radius: 8px;
+    
+    /* Añade una sombra alrededor del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título de la sección de Cursos */
+.courses-container h2 {
+    /* Centra el texto del título */
+    text-align: center;
+    
+    /* Color del texto */
+    color: #333;
+}
+
+/* Estilos para la lista de cursos */
+.course-list {
+    /* Ajusta la lista para que los elementos se apilen verticalmente */
+    display: flex;
+    flex-direction: column;
+    
+    /* Añade un espacio entre los elementos de la lista */
+    gap: 15px;
+}
+
+/* Estilos para cada elemento de la lista de cursos */
+.course-list li {
+    /* Fondo turquesa para los elementos de la lista */
+    background-color: paleturquoise;
+    
+    /* Texto blanco */
+    color: white;
+    
+    /* Añade relleno y bordes redondeados */
+    padding: 15px;
+    border-radius: 8px;
+    
+    /* Centra el texto dentro del elemento */
+    text-align: center;
+    
+    /* Transición suave para el cambio de color al pasar el mouse */
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo cuando se pasa el cursor sobre los elementos de la lista de cursos */
+.course-list li:hover {
+    /* Cambia el fondo a un azul más oscuro */
+    background-color: #0056b3;
+}
+
+/* Estilos para los enlaces dentro de la lista de cursos */
+.course-list li a {
+    /* Color del texto de los enlaces */
+    color: #1a1a1a;
+    
+    /* Tamaño y peso de la fuente */
+    font-size: 20px;
+    font-weight: bold;
+    
+    /* Elimina el subrayado predeterminado */
+    text-decoration: none;
+}
+
+/* Estilos para los detalles del curso */
+.course-details {
+    /* Centra el contenido de los detalles del curso */
+    text-align: center;
+    
+    /* Fondo blanco, relleno y bordes redondeados */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    
+    /* Añade una sombra alrededor del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Añade un margen superior para separar de otros elementos */
+    margin-top: 20px;
+}
+
+/* Estilos para el título de los detalles del curso */
+.course-details h3 {
+    /* Color azul para el título */
+    color: #007bff;
+    
+    /* Ajusta el tamaño de la fuente */
+    font-size: 28px;
+}
+
+/* Estilos para la descripción del curso */
+.course-details p {
+    /* Tamaño de la fuente y color gris para la descripción */
+    font-size: 18px;
+    color: #666;
+}
+
+/* Estilos para la sección de administración */
+.admin-container {
+    /* Ancho máximo y centrado del contenedor */
+    max-width: 800px;
+    margin: 40px auto;
+    
+    /* Relleno y fondo gris claro */
+    padding: 20px;
+    background-color: #e9ecef;
+    
+    /* Bordes redondeados */
+    border-radius: 8px;
+    
+    /* Centra el contenido */
+    text-align: center;
+}
