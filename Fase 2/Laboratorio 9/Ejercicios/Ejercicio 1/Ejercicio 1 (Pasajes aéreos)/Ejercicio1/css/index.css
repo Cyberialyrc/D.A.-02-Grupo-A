@@ -1,0 +1,52 @@
+/*******************************************************************************
+ARCHIVO: index.css
+AUTOR: Manrique Silva Ricardo Gabriel
+FECHA: 21/10/24
+DESCRIPCIÓN: Archivo encargado de modificar estilos para el index (Inicio).
+********************************************************************************/
+.carousel-container {
+    position: relative; /* Posiciona el elemento de forma relativa */
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 800px; /* Ancho máximo para evitar que se expanda demasiado */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 40px 0; /* Espaciado vertical dentro del contenedor */
+}
+
+/* Área interna del carrusel, con bordes y fondo */
+.carousel-inner {
+    border: 2px solid #ddd; /* Borde gris claro alrededor del contenido */
+    padding: 20px; /* Espacio interno entre el borde y el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo color gris claro */
+    height: 400px; /* Altura fija del carrusel */
+}
+
+/* Estilo del encabezado dentro de cada item del carrusel */
+.carousel-item h3 {
+    margin-top: 0; /* Elimina el margen superior para ajustar el título */
+}
+
+/* Indicadores del carrusel, posicionados y centrados debajo del contenido */
+.carousel-indicators {
+    bottom: -30px; /* Posiciona los indicadores debajo del carrusel */
+    display: flex; /* Alineación flexible para centrar los elementos */
+    justify-content: center; /* Centra horizontalmente los indicadores */
+}
+
+/* Estilo de cada indicador del carrusel */
+.carousel-indicators li {
+    background-color: #000; /* Color de fondo negro */
+    border-radius: 50%; /* Indicadores redondeados en forma de círculo */
+    width: 10px; /* Ancho del indicador */
+    height: 10px; /* Altura del indicador */
+    margin: 0 5px; /* Espaciado entre los indicadores */
+    list-style: none; /* Elimina el estilo de lista predeterminado */
+    opacity: 0.5; /* Hace los indicadores semi-transparentes */
+    transition: opacity 0.15s ease-in-out; /* Transición suave en la opacidad */
+}
+
+/* Estilo para el indicador activo */
+.carousel-indicators .active {
+    background-color: #555; /* Cambia el fondo a gris oscuro cuando está activo */
+    opacity: 1; /* Opacidad completa para el indicador activo */
+}
