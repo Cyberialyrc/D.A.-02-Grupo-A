@@ -1,0 +1,26 @@
+/*******************************************************************************
+ARCHIVO: header.css
+AUTOR: Manrique Silva Ricardo Gabriel
+FECHA: 21/10/24
+DESCRIPCIÓN: Archivo encargado de modificar estilos para el encabezado.
+********************************************************************************/
+/* Estilo para la imagen del logo en la barra de navegación */
+.logo-img {
+    width: auto; /* Ajusta el ancho automáticamente según la proporción de la imagen */
+    height: 45px; /* Fija la altura del logo */
+    margin-right: 10px; /* Espaciado a la derecha del logo */
+}
+
+/* Estilo del contenedor de los elementos de la barra de navegación */
+.navbar-nav {
+    display: flex; /* Alineación flexible de los elementos dentro de la barra */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    height: 100%; /* Altura completa del contenedor */
+}
+
+/* Estilo para los enlaces dentro de la barra de navegación */
+.nav-link {
+    display: flex; /* Alineación flexible para ajustar iconos y texto */
+    align-items: center; /* Centra verticalmente los iconos y texto */
+}

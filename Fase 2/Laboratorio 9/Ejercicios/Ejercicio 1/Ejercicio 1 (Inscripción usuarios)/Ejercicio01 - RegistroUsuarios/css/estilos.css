@@ -1,0 +1,29 @@
+/*************************************************************************
+ARCHIVO: estilos.css
+AUTOR: Manrique Silva Ricardo Gabriel
+FECHA: 21/10/24
+DESCRIPCIÓN: Archivo css encargado de dar estilos generales a las páginas
+**************************************************************************/ 
+/* Asegura que el body ocupe toda la altura de la ventana */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* El contenedor principal ocupa todo el espacio disponible */
+.container {
+    min-height: calc(100vh - 100px); /* Altura mínima: altura total menos el footer */
+    padding-bottom: 20px; /* Espacio para evitar que el contenido se sobreponga al footer */
+}
+
+/* Footer siempre en la parte inferior */
+footer {
+    height: 50px;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Relleno interno del footer */
+    margin-top: -30px; /* Espacio entre el contenido y el footer */
+    width: 100%; /* Ocupa todo el ancho de la página */
+}
