@@ -1,0 +1,1 @@
+El archivo "firebase_credentials.json" es un archivo personal que incluye las claves SDK para cada firebase. Este mismo no debe ser compartido ni subido a ningún sitio, por ello el archivo en el proyecto está vacío. Este debe ser reemplazado con las credenciales propias descargadas de firebase, conservando el mismo nombre.
